@@ -1,0 +1,4 @@
+#include? "Secrets.xcconfig"
+
+SUPABASE_URL = https:/$()/placeholder.local
+SUPABASE_ANON_KEY = placeholder
