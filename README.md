@@ -1,30 +1,32 @@
 # Plates
 
-iOS app for meal plans, meal logging, workout plans, and workouts — built to stay in sync day by day.
+iOS app for planning lifting and eating together — local-first SwiftUI + SwiftData.
 
 ## Open in Xcode
 
 1. Open `Plates.xcodeproj`.
-2. Select the **Plates** scheme and an iPhone simulator.
-3. **Product → Run** (⌘R).
+2. Scheme **Plates** → iPhone simulator → **⌘R**.
 
-### Regenerate the Xcode project
-
-After changing `project.yml`:
+Regenerate after editing `project.yml`:
 
 ```bash
 xcodegen generate
 ```
 
-## Supabase
+## Spec and design
 
-1. Create a project at [supabase.com](https://supabase.com).
-2. Copy `Config/Secrets.example.xcconfig` → `Config/Secrets.xcconfig`.
-3. Paste **Project URL** and **anon public** key from Supabase → Project Settings → API.
-4. Rebuild the app. The **Today** tab hides the setup hint when keys are valid.
+- Product spec: [PLATES_SPEC.md](PLATES_SPEC.md)
+- Agent rules: [.cursor/rules/plates.mdc](.cursor/rules/plates.mdc)
+- Mockups: add PNGs to `design/` (see spec Part 3 kickoff list)
 
-Never commit `Secrets.xcconfig`.
+## Phase 0 (current)
+
+Foundation: design system, five-tab shell, SwiftData models, seed exercises/foods. Preview **DesignGalleryView** in Xcode for component QA.
+
+## TestFlight (install on your iPhone)
+
+Step-by-step: [docs/TESTFLIGHT.md](docs/TESTFLIGHT.md) — Apple Developer ($99/yr), App Store Connect, one Archive upload from Xcode.
 
 ## GitHub
 
-Remote: https://github.com/maxpjeff/plates
+https://github.com/maxpjeff/plates

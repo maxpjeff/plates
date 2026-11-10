@@ -1,0 +1,437 @@
+[
+  {
+    "name": "Barbell Bench Press",
+    "primaryMuscle": "chest",
+    "secondaryMuscles": [
+      "shoulders",
+      "arms"
+    ],
+    "equipment": "barbell",
+    "isLowerBody": false
+  },
+  {
+    "name": "Incline Dumbbell Press",
+    "primaryMuscle": "chest",
+    "secondaryMuscles": [
+      "shoulders"
+    ],
+    "equipment": "dumbbell",
+    "isLowerBody": false
+  },
+  {
+    "name": "Barbell Row",
+    "primaryMuscle": "back",
+    "secondaryMuscles": [
+      "arms"
+    ],
+    "equipment": "barbell",
+    "isLowerBody": false
+  },
+  {
+    "name": "Pull-Up",
+    "primaryMuscle": "back",
+    "secondaryMuscles": [
+      "arms"
+    ],
+    "equipment": "bodyweight",
+    "isLowerBody": false
+  },
+  {
+    "name": "Lat Pulldown",
+    "primaryMuscle": "back",
+    "secondaryMuscles": [
+      "arms"
+    ],
+    "equipment": "cable",
+    "isLowerBody": false
+  },
+  {
+    "name": "Barbell Squat",
+    "primaryMuscle": "legs",
+    "secondaryMuscles": [
+      "core"
+    ],
+    "equipment": "barbell",
+    "isLowerBody": true
+  },
+  {
+    "name": "Romanian Deadlift",
+    "primaryMuscle": "legs",
+    "secondaryMuscles": [
+      "back"
+    ],
+    "equipment": "barbell",
+    "isLowerBody": true
+  },
+  {
+    "name": "Leg Press",
+    "primaryMuscle": "legs",
+    "secondaryMuscles": [],
+    "equipment": "machine",
+    "isLowerBody": true
+  },
+  {
+    "name": "Walking Lunge",
+    "primaryMuscle": "legs",
+    "secondaryMuscles": [
+      "core"
+    ],
+    "equipment": "dumbbell",
+    "isLowerBody": true
+  },
+  {
+    "name": "Overhead Press",
+    "primaryMuscle": "shoulders",
+    "secondaryMuscles": [
+      "arms"
+    ],
+    "equipment": "barbell",
+    "isLowerBody": false
+  },
+  {
+    "name": "Lateral Raise",
+    "primaryMuscle": "shoulders",
+    "secondaryMuscles": [],
+    "equipment": "dumbbell",
+    "isLowerBody": false
+  },
+  {
+    "name": "Barbell Curl",
+    "primaryMuscle": "arms",
+    "secondaryMuscles": [],
+    "equipment": "barbell",
+    "isLowerBody": false
+  },
+  {
+    "name": "Triceps Pushdown",
+    "primaryMuscle": "arms",
+    "secondaryMuscles": [],
+    "equipment": "cable",
+    "isLowerBody": false
+  },
+  {
+    "name": "Plank",
+    "primaryMuscle": "core",
+    "secondaryMuscles": [],
+    "equipment": "bodyweight",
+    "isLowerBody": false
+  },
+  {
+    "name": "Deadlift",
+    "primaryMuscle": "back",
+    "secondaryMuscles": [
+      "legs"
+    ],
+    "equipment": "barbell",
+    "isLowerBody": true
+  },
+  {
+    "name": "Front Squat",
+    "primaryMuscle": "legs",
+    "secondaryMuscles": [
+      "core"
+    ],
+    "equipment": "barbell",
+    "isLowerBody": true
+  },
+  {
+    "name": "Hip Thrust",
+    "primaryMuscle": "legs",
+    "secondaryMuscles": [
+      "core"
+    ],
+    "equipment": "barbell",
+    "isLowerBody": true
+  },
+  {
+    "name": "Chest-Supported Row",
+    "primaryMuscle": "back",
+    "secondaryMuscles": [
+      "arms"
+    ],
+    "equipment": "machine",
+    "isLowerBody": false
+  },
+  {
+    "name": "Face Pull",
+    "primaryMuscle": "shoulders",
+    "secondaryMuscles": [
+      "back"
+    ],
+    "equipment": "cable",
+    "isLowerBody": false
+  },
+  {
+    "name": "Bulgarian Split Squat",
+    "primaryMuscle": "legs",
+    "secondaryMuscles": [],
+    "equipment": "dumbbell",
+    "isLowerBody": true
+  },
+  {
+    "name": "Dumbbell Row",
+    "primaryMuscle": "back",
+    "secondaryMuscles": [
+      "arms"
+    ],
+    "equipment": "dumbbell",
+    "isLowerBody": false
+  },
+  {
+    "name": "Seated Cable Row",
+    "primaryMuscle": "back",
+    "secondaryMuscles": [
+      "arms"
+    ],
+    "equipment": "cable",
+    "isLowerBody": false
+  },
+  {
+    "name": "Pec Deck",
+    "primaryMuscle": "chest",
+    "secondaryMuscles": [],
+    "equipment": "machine",
+    "isLowerBody": false
+  },
+  {
+    "name": "Cable Fly",
+    "primaryMuscle": "chest",
+    "secondaryMuscles": [],
+    "equipment": "cable",
+    "isLowerBody": false
+  },
+  {
+    "name": "Goblet Squat",
+    "primaryMuscle": "legs",
+    "secondaryMuscles": [
+      "core"
+    ],
+    "equipment": "dumbbell",
+    "isLowerBody": true
+  },
+  {
+    "name": "Leg Curl",
+    "primaryMuscle": "legs",
+    "secondaryMuscles": [],
+    "equipment": "machine",
+    "isLowerBody": true
+  },
+  {
+    "name": "Leg Extension",
+    "primaryMuscle": "legs",
+    "secondaryMuscles": [],
+    "equipment": "machine",
+    "isLowerBody": true
+  },
+  {
+    "name": "Calf Raise",
+    "primaryMuscle": "legs",
+    "secondaryMuscles": [],
+    "equipment": "machine",
+    "isLowerBody": true
+  },
+  {
+    "name": "Arnold Press",
+    "primaryMuscle": "shoulders",
+    "secondaryMuscles": [
+      "arms"
+    ],
+    "equipment": "dumbbell",
+    "isLowerBody": false
+  },
+  {
+    "name": "Hammer Curl",
+    "primaryMuscle": "arms",
+    "secondaryMuscles": [],
+    "equipment": "dumbbell",
+    "isLowerBody": false
+  },
+  {
+    "name": "Skull Crusher",
+    "primaryMuscle": "arms",
+    "secondaryMuscles": [],
+    "equipment": "barbell",
+    "isLowerBody": false
+  },
+  {
+    "name": "Dips",
+    "primaryMuscle": "chest",
+    "secondaryMuscles": [
+      "arms"
+    ],
+    "equipment": "bodyweightLoaded",
+    "isLowerBody": false
+  },
+  {
+    "name": "Push-Up",
+    "primaryMuscle": "chest",
+    "secondaryMuscles": [
+      "arms"
+    ],
+    "equipment": "bodyweight",
+    "isLowerBody": false
+  },
+  {
+    "name": "Chin-Up",
+    "primaryMuscle": "back",
+    "secondaryMuscles": [
+      "arms"
+    ],
+    "equipment": "bodyweight",
+    "isLowerBody": false
+  },
+  {
+    "name": "Hack Squat",
+    "primaryMuscle": "legs",
+    "secondaryMuscles": [],
+    "equipment": "machine",
+    "isLowerBody": true
+  },
+  {
+    "name": "Good Morning",
+    "primaryMuscle": "back",
+    "secondaryMuscles": [
+      "legs"
+    ],
+    "equipment": "barbell",
+    "isLowerBody": true
+  },
+  {
+    "name": "Ab Wheel",
+    "primaryMuscle": "core",
+    "secondaryMuscles": [],
+    "equipment": "bodyweight",
+    "isLowerBody": false
+  },
+  {
+    "name": "Hanging Leg Raise",
+    "primaryMuscle": "core",
+    "secondaryMuscles": [],
+    "equipment": "bodyweight",
+    "isLowerBody": false
+  },
+  {
+    "name": "Farmer Carry",
+    "primaryMuscle": "core",
+    "secondaryMuscles": [
+      "arms"
+    ],
+    "equipment": "dumbbell",
+    "isLowerBody": false
+  },
+  {
+    "name": "T-Bar Row",
+    "primaryMuscle": "back",
+    "secondaryMuscles": [
+      "arms"
+    ],
+    "equipment": "barbell",
+    "isLowerBody": false
+  },
+  {
+    "name": "Sumo Deadlift",
+    "primaryMuscle": "legs",
+    "secondaryMuscles": [
+      "back"
+    ],
+    "equipment": "barbell",
+    "isLowerBody": true
+  },
+  {
+    "name": "Incline Barbell Press",
+    "primaryMuscle": "chest",
+    "secondaryMuscles": [
+      "shoulders"
+    ],
+    "equipment": "barbell",
+    "isLowerBody": false
+  },
+  {
+    "name": "Preacher Curl",
+    "primaryMuscle": "arms",
+    "secondaryMuscles": [],
+    "equipment": "machine",
+    "isLowerBody": false
+  },
+  {
+    "name": "Reverse Fly",
+    "primaryMuscle": "shoulders",
+    "secondaryMuscles": [
+      "back"
+    ],
+    "equipment": "dumbbell",
+    "isLowerBody": false
+  },
+  {
+    "name": "Landmine Press",
+    "primaryMuscle": "shoulders",
+    "secondaryMuscles": [
+      "core"
+    ],
+    "equipment": "barbell",
+    "isLowerBody": false
+  },
+  {
+    "name": "Easy Run",
+    "primaryMuscle": "fullBody",
+    "secondaryMuscles": [],
+    "equipment": "bodyweight",
+    "isLowerBody": true
+  },
+  {
+    "name": "Long Run",
+    "primaryMuscle": "fullBody",
+    "secondaryMuscles": [],
+    "equipment": "bodyweight",
+    "isLowerBody": true
+  },
+  {
+    "name": "Tempo Run",
+    "primaryMuscle": "fullBody",
+    "secondaryMuscles": [],
+    "equipment": "bodyweight",
+    "isLowerBody": true
+  },
+  {
+    "name": "Interval Run",
+    "primaryMuscle": "fullBody",
+    "secondaryMuscles": [],
+    "equipment": "bodyweight",
+    "isLowerBody": true
+  },
+  {
+    "name": "Track Sprint — 100m",
+    "primaryMuscle": "legs",
+    "secondaryMuscles": ["glutes"],
+    "equipment": "bodyweight",
+    "isLowerBody": true
+  },
+  {
+    "name": "Track Sprint — 200m",
+    "primaryMuscle": "legs",
+    "secondaryMuscles": ["glutes"],
+    "equipment": "bodyweight",
+    "isLowerBody": true
+  },
+  {
+    "name": "Track Sprint — 400m",
+    "primaryMuscle": "legs",
+    "secondaryMuscles": ["glutes"],
+    "equipment": "bodyweight",
+    "isLowerBody": true
+  },
+  {
+    "name": "Strides",
+    "primaryMuscle": "legs",
+    "secondaryMuscles": [],
+    "equipment": "bodyweight",
+    "isLowerBody": true
+  },
+  {
+    "name": "Hill Repeats",
+    "primaryMuscle": "legs",
+    "secondaryMuscles": ["glutes"],
+    "equipment": "bodyweight",
+    "isLowerBody": true
+  }
+]

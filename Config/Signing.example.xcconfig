@@ -1,0 +1,2 @@
+// Copy to Signing.xcconfig (gitignored). Team ID from Xcode → Settings → Accounts → Team.
+DEVELOPMENT_TEAM = AB12CD34EF

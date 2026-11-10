@@ -1,0 +1,957 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07BEBE55C8310D758CE1F23B /* CapyNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B18193406A3DC61B2E5F586 /* CapyNotifications.swift */; };
+		09976FCEE9107BA1F019B23A /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F48102375A9E84F5CF2EDBE /* AppConstants.swift */; };
+		0B45EB247467B3AD2C3CBD57 /* HeroCapyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DC891B98FD87E466164E1F /* HeroCapyCard.swift */; };
+		140280F2500108CC1AC78044 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F48102375A9E84F5CF2EDBE /* AppConstants.swift */; };
+		168659BAE832728C24098916 /* CapyNotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAA7840AF340C59A031D043 /* CapyNotificationDelegate.swift */; };
+		1715F64132CFC63BE75E043D /* FeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4209879B2930B0EBD078EBFA /* FeedService.swift */; };
+		18951B39ED6614F51A432FE2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1A050C01A44861ED01B4DC /* HomeView.swift */; };
+		1B91295DCEBEBA2C32783237 /* CapyClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6DF1F594EE6776E793EFE6 /* CapyClock.swift */; };
+		1D38AA799D290C69994E049B /* CapyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892BE7B049451653FC787389 /* CapyModels.swift */; };
+		1F43CD32FDB746C7C5781200 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A2BCF36C6B8A8FAC56B7AB /* Theme.swift */; };
+		2251DEC6FE9C59A0E56E45A3 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A2BCF36C6B8A8FAC56B7AB /* Theme.swift */; };
+		245B60E2781C2E9AED07FFAD /* HeroCapyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DC891B98FD87E466164E1F /* HeroCapyCard.swift */; };
+		25015305833174754602B44C /* PaperBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ED11A585416B53E1C7EDEB /* PaperBackground.swift */; };
+		26D831EA138B4ABDDA5DDADB /* CapyFontLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D2243B75895573A09E545A /* CapyFontLoader.swift */; };
+		2EF6CC60891D634DBDB59EA9 /* CapyEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5A32A9A61E3439C4AFB07F /* CapyEngine.swift */; };
+		31C559C73A6678E1BA24FE8D /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63F4F805532B0C6638E1C46 /* AvatarView.swift */; };
+		33A3F712DE92E61A2E8CCB5D /* MascotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BED309571FFD5AA7916681 /* MascotView.swift */; };
+		36FB88439F79E52357CACDCA /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400F3E83EE01E58E050BBBB4 /* CameraPreviewView.swift */; };
+		38BA9D44CB2C84BF9EF51FAF /* CapyEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B52CBC2BAE03632A6C24901 /* CapyEngineTests.swift */; };
+		3AF724353E12683A7F65629B /* CapyReconciler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943AE0820F712867E75D5D02 /* CapyReconciler.swift */; };
+		3FB31D9285A1617A49E9A74B /* CapyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058CA251A3D2E80770B39C47 /* CapyApp.swift */; };
+		4185E8A65C87F6665564250F /* CapyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D570CA600410EFDEA39B1948 /* CapyWidget.swift */; };
+		41F82C158CD749769D34A0EB /* CapyComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466A85AFCFADB74F3B2CD8B0 /* CapyComponents.swift */; };
+		44C9D9719698DADC7C82D125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A07A7AFEE09A8C2B367BB249 /* Assets.xcassets */; };
+		47440CF0D32F28D184FB6AB7 /* CapyClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6DF1F594EE6776E793EFE6 /* CapyClock.swift */; };
+		483340A83444E268D08773E0 /* HeroCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931F700C7FD2BF8A29CB4A21 /* HeroCard.swift */; };
+		4AE6683EBD94610F619CDEE6 /* CapyFontResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE857BCE4CCA3BE49B91499 /* CapyFontResolver.swift */; };
+		4E9894EA2E55673C15C5EFB7 /* panel_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E26B414483B06C84F3690459 /* panel_2.jpg */; };
+		50E927F6DF9C7D30B8616739 /* FedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1166C601A8511EC18C40E1 /* FedView.swift */; };
+		519F539DA2E5FF616A3F06C6 /* CapyComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466A85AFCFADB74F3B2CD8B0 /* CapyComponents.swift */; };
+		55A0A7B2C06885FBF0D397EC /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 420962B64B921817B2E5656F /* Nunito-SemiBold.ttf */; };
+		591320C501A45A9A9DE52F62 /* FeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4209879B2930B0EBD078EBFA /* FeedService.swift */; };
+		5A58734C7C4E8FE016DF8A8C /* panel_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E26B414483B06C84F3690459 /* panel_2.jpg */; };
+		5B847FE7E34CC29A40CFCF1C /* Fredoka-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B257D0D25D6DAF14E9C7F36 /* Fredoka-SemiBold.ttf */; };
+		633663FAAD1695AFD361656D /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 342AF8E2D571394CF284AE8C /* Nunito-ExtraBold.ttf */; };
+		66063B086627D95D979121DE /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63F4F805532B0C6638E1C46 /* AvatarView.swift */; };
+		674B2E353AFDBACA7E02E9D3 /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A393858B48E6FDEB11DBE43 /* PhotoStore.swift */; };
+		6989EECFC0871923E5832651 /* panel_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CA82695531E177F016E174A0 /* panel_3.jpg */; };
+		6AB117FDCDC60C65AE7217A6 /* CapyTextStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E5C252D974BA2E8714F590 /* CapyTextStyles.swift */; };
+		70BE3EE91D8B329273D80BAA /* PaperBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ED11A585416B53E1C7EDEB /* PaperBackground.swift */; };
+		718F6CF21E19C447000C7E6C /* CapyMascotPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998F014542762C90C7564171 /* CapyMascotPhase.swift */; };
+		71D89E429263D536CA832DD3 /* CapyRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE01A5204AE19B801BF222B /* CapyRootView.swift */; };
+		74F88D7991E9E7235F43C245 /* panel_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CA82695531E177F016E174A0 /* panel_3.jpg */; };
+		75EC988651A3FE5922445A50 /* CapyReconciler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943AE0820F712867E75D5D02 /* CapyReconciler.swift */; };
+		769BCDE29B5AF9B290E59358 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B918F7145BE02EC43DB7094 /* CameraService.swift */; };
+		78976E4A970D0F066B19FFF4 /* WidgetSceneBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCB42A4D0669931F3930440 /* WidgetSceneBackground.swift */; };
+		872B670163F554FADF39B4FE /* panel_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2209D824EADD6794CC4E2A00 /* panel_1.jpg */; };
+		8B40DE252E929858FFA37EA4 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593B0BFBC3E877D5512A8639 /* HomeViewModel.swift */; };
+		8C92D018580BCC7AC5107978 /* CapyAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456E6599AB110C9D8E28E668 /* CapyAppState.swift */; };
+		95ED82EE20C312AE22FDC6DA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7458236431254F155F2292C /* SettingsView.swift */; };
+		9D3E4CB8339F5C0B6AD4C713 /* CameraFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B2DD3C01D49317E21689F /* CameraFlowView.swift */; };
+		9D4E9F89A689EFE62A5BC1E6 /* HeroCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931F700C7FD2BF8A29CB4A21 /* HeroCard.swift */; };
+		9F0AC95645C534E6ED76056C /* CapyTextStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E5C252D974BA2E8714F590 /* CapyTextStyles.swift */; };
+		A19DC6CE4013CD2717C31608 /* DotGridBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AB9CDF09CA242EE5B7EDD /* DotGridBackground.swift */; };
+		A41A56ED017DBECC60A03D61 /* WidgetTimelineBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04DC96B7DECD52A27CB287 /* WidgetTimelineBuilder.swift */; };
+		A65BB53CB0FB62BB2FD66034 /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A393858B48E6FDEB11DBE43 /* PhotoStore.swift */; };
+		A96A9CC4726346E22CA858A6 /* CapyDayStatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADB4DAAF423854C3DAFAE57 /* CapyDayStatusTests.swift */; };
+		B0F8E296F842FFDB26D17E7C /* CapyNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B18193406A3DC61B2E5F586 /* CapyNotifications.swift */; };
+		B45D78A8F65513B38706EAA8 /* CapyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892BE7B049451653FC787389 /* CapyModels.swift */; };
+		B6413454678D3F0F6B5184AA /* CapyMascotPhaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E82DFAE1F0E6167C525099 /* CapyMascotPhaseTests.swift */; };
+		B7C5820C29DECE3BDAA8F38E /* panel_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2209D824EADD6794CC4E2A00 /* panel_1.jpg */; };
+		B7C9FC70CE8DDDFCF44BE364 /* MascotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BED309571FFD5AA7916681 /* MascotView.swift */; };
+		BC5C8E8653E38703E36D9576 /* AvatarStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB411E93700A9A63C72332B /* AvatarStateTests.swift */; };
+		BCFA7C3292B9CDC12091ACD4 /* CapyWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FEFB823754EDD892304A2D84 /* CapyWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BD7839BA537E532ED0356114 /* AvatarState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952119B1453DA90AD22243CE /* AvatarState.swift */; };
+		BDB74CFCF02CB9187577BF73 /* CapyMascotPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998F014542762C90C7564171 /* CapyMascotPhase.swift */; };
+		C2172DA1F1E44436EA9DE9A0 /* WidgetSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F625A550186070CFBDA3E93 /* WidgetSnapshot.swift */; };
+		C2A8F88655F90DF7E0C9B4EB /* WidgetTimelineBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04DC96B7DECD52A27CB287 /* WidgetTimelineBuilder.swift */; };
+		C2ED911C77CB810B82DDEB3C /* CapyFontResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE857BCE4CCA3BE49B91499 /* CapyFontResolver.swift */; };
+		C8BBBA73C78AF00EAF5532BF /* DotGridBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AB9CDF09CA242EE5B7EDD /* DotGridBackground.swift */; };
+		C9C71056226AFDA1A86E0F83 /* CapyWidgetViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D020FE9C43C773BF3390E464 /* CapyWidgetViews.swift */; };
+		CA44ECF3579BFABCAEA24856 /* CapyEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5A32A9A61E3439C4AFB07F /* CapyEngine.swift */; };
+		CAE1CDDAE98E90BA63FA33A1 /* panel_0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2FE2B2BD329CA8151F98BDB /* panel_0.jpg */; };
+		CBE3C431E6710C7661499E61 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F3F99AD18316DA40C291517 /* Nunito-Bold.ttf */; };
+		CEB462F9B6093021CB0F7695 /* panel_0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2FE2B2BD329CA8151F98BDB /* panel_0.jpg */; };
+		CF353D567E6C6186E97540B6 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D756BF15D71C2F46C159048 /* HistoryView.swift */; };
+		D79839038816E05123AFAFC5 /* Fredoka-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 396191DF7C55F110B9A0FECB /* Fredoka-Bold.ttf */; };
+		D86EFDB396D0229EBD1F36AE /* DayHistoryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD8C2D0020BA3ABA80072FF /* DayHistoryHelper.swift */; };
+		E1D04880B6A2AB3C4DF4A34D /* CapyFontLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D2243B75895573A09E545A /* CapyFontLoader.swift */; };
+		E3156A54B9949349716C91A0 /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB686AF8582D96E22A7ECCE /* SharedStore.swift */; };
+		E55DDBEC7A4EA5EB09FFCC1C /* DayHistoryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD8C2D0020BA3ABA80072FF /* DayHistoryHelper.swift */; };
+		E5EF4D329A42F6D190CA88FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A07A7AFEE09A8C2B367BB249 /* Assets.xcassets */; };
+		E76D869438F2AD8A81A7A55B /* OnboardingFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03928A8F900984AEEB58D56C /* OnboardingFlowView.swift */; };
+		EA17B6C8959B7872DF073033 /* WidgetReloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EF909872CFED9201169C58 /* WidgetReloader.swift */; };
+		EE601523908208D92BFAF666 /* WidgetSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F625A550186070CFBDA3E93 /* WidgetSnapshot.swift */; };
+		F25B61C2F2999111604D857A /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB686AF8582D96E22A7ECCE /* SharedStore.swift */; };
+		F425CA58DFE60AB3A8A1A7E5 /* AvatarState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952119B1453DA90AD22243CE /* AvatarState.swift */; };
+		F7A0B9D3C37F1C988DDBBEED /* WidgetReloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EF909872CFED9201169C58 /* WidgetReloader.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2BD01F927E02F148C5AEF96B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E4E830B316C10EC01F8C376 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF92C0942ACD23C765D9FE92;
+			remoteInfo = Capy;
+		};
+		97A10B23F13A15E1E516CBC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E4E830B316C10EC01F8C376 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 250738363BC6AB61D412B7A8;
+			remoteInfo = CapyWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		554EB104FCC50A258A584803 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BCFA7C3292B9CDC12091ACD4 /* CapyWidgets.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		03928A8F900984AEEB58D56C /* OnboardingFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlowView.swift; sourceTree = "<group>"; };
+		058CA251A3D2E80770B39C47 /* CapyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapyApp.swift; sourceTree = "<group>"; };
+		08BEAFD83B1B1A2E1D2358BD /* CapyTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = CapyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B18193406A3DC61B2E5F586 /* CapyNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapyNotifications.swift; sourceTree = "<group>"; };
+		0B2B9DD4FBE140C79AEBABB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0DE01A5204AE19B801BF222B /* CapyRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapyRootView.swift; sourceTree = "<group>"; };
+		0EB411E93700A9A63C72332B /* AvatarStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarStateTests.swift; sourceTree = "<group>"; };
+		0F625A550186070CFBDA3E93 /* WidgetSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetSnapshot.swift; sourceTree = "<group>"; };
+		1B918F7145BE02EC43DB7094 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		1F562B585AC4E2E98692FE40 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		2209D824EADD6794CC4E2A00 /* panel_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = panel_1.jpg; sourceTree = "<group>"; };
+		23DC891B98FD87E466164E1F /* HeroCapyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCapyCard.swift; sourceTree = "<group>"; };
+		26E82DFAE1F0E6167C525099 /* CapyMascotPhaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapyMascotPhaseTests.swift; sourceTree = "<group>"; };
+		26ED11A585416B53E1C7EDEB /* PaperBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperBackground.swift; sourceTree = "<group>"; };
+		29026EECC5C1CD43AE42A566 /* CapyWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CapyWidget.entitlements; sourceTree = "<group>"; };
+		2B257D0D25D6DAF14E9C7F36 /* Fredoka-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-SemiBold.ttf"; sourceTree = "<group>"; };
+		2F48102375A9E84F5CF2EDBE /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		342AF8E2D571394CF284AE8C /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
+		396191DF7C55F110B9A0FECB /* Fredoka-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-Bold.ttf"; sourceTree = "<group>"; };
+		400F3E83EE01E58E050BBBB4 /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
+		420962B64B921817B2E5656F /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
+		4209879B2930B0EBD078EBFA /* FeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedService.swift; sourceTree = "<group>"; };
+		456E6599AB110C9D8E28E668 /* CapyAppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapyAppState.swift; sourceTree = "<group>"; };
+		466A85AFCFADB74F3B2CD8B0 /* CapyComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapyComponents.swift; sourceTree = "<group>"; };
+		4D756BF15D71C2F46C159048 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		4F3F99AD18316DA40C291517 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		593B0BFBC3E877D5512A8639 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		59BED309571FFD5AA7916681 /* MascotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MascotView.swift; sourceTree = "<group>"; };
+		615B2DD3C01D49317E21689F /* CameraFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFlowView.swift; sourceTree = "<group>"; };
+		6ADB4DAAF423854C3DAFAE57 /* CapyDayStatusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapyDayStatusTests.swift; sourceTree = "<group>"; };
+		6B52CBC2BAE03632A6C24901 /* CapyEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapyEngineTests.swift; sourceTree = "<group>"; };
+		6BD8C2D0020BA3ABA80072FF /* DayHistoryHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayHistoryHelper.swift; sourceTree = "<group>"; };
+		6DE857BCE4CCA3BE49B91499 /* CapyFontResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapyFontResolver.swift; sourceTree = "<group>"; };
+		70A2BCF36C6B8A8FAC56B7AB /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		7B1166C601A8511EC18C40E1 /* FedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FedView.swift; sourceTree = "<group>"; };
+		892BE7B049451653FC787389 /* CapyModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapyModels.swift; sourceTree = "<group>"; };
+		931F700C7FD2BF8A29CB4A21 /* HeroCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCard.swift; sourceTree = "<group>"; };
+		943AE0820F712867E75D5D02 /* CapyReconciler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapyReconciler.swift; sourceTree = "<group>"; };
+		952119B1453DA90AD22243CE /* AvatarState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarState.swift; sourceTree = "<group>"; };
+		998F014542762C90C7564171 /* CapyMascotPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapyMascotPhase.swift; sourceTree = "<group>"; };
+		9A393858B48E6FDEB11DBE43 /* PhotoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
+		9D04DC96B7DECD52A27CB287 /* WidgetTimelineBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetTimelineBuilder.swift; sourceTree = "<group>"; };
+		A07A7AFEE09A8C2B367BB249 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A302ED7864A0678D5886BC94 /* Capy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4D5D59732242D02FF863A45 /* Capy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Capy.entitlements; sourceTree = "<group>"; };
+		A7EF909872CFED9201169C58 /* WidgetReloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetReloader.swift; sourceTree = "<group>"; };
+		AA6DF1F594EE6776E793EFE6 /* CapyClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapyClock.swift; sourceTree = "<group>"; };
+		B2FE2B2BD329CA8151F98BDB /* panel_0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = panel_0.jpg; sourceTree = "<group>"; };
+		B5E5C252D974BA2E8714F590 /* CapyTextStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapyTextStyles.swift; sourceTree = "<group>"; };
+		B63F4F805532B0C6638E1C46 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		BDCB42A4D0669931F3930440 /* WidgetSceneBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetSceneBackground.swift; sourceTree = "<group>"; };
+		CA82695531E177F016E174A0 /* panel_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = panel_3.jpg; sourceTree = "<group>"; };
+		D020FE9C43C773BF3390E464 /* CapyWidgetViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapyWidgetViews.swift; sourceTree = "<group>"; };
+		D570CA600410EFDEA39B1948 /* CapyWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapyWidget.swift; sourceTree = "<group>"; };
+		D62AB9CDF09CA242EE5B7EDD /* DotGridBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotGridBackground.swift; sourceTree = "<group>"; };
+		D8D2243B75895573A09E545A /* CapyFontLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapyFontLoader.swift; sourceTree = "<group>"; };
+		DBB686AF8582D96E22A7ECCE /* SharedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStore.swift; sourceTree = "<group>"; };
+		DC1A050C01A44861ED01B4DC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DDF5770FB86AEB11C53B2A72 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		DEAA7840AF340C59A031D043 /* CapyNotificationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapyNotificationDelegate.swift; sourceTree = "<group>"; };
+		DF5A32A9A61E3439C4AFB07F /* CapyEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapyEngine.swift; sourceTree = "<group>"; };
+		E26B414483B06C84F3690459 /* panel_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = panel_2.jpg; sourceTree = "<group>"; };
+		F677FD873F77420018F46EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F7458236431254F155F2292C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		FEFB823754EDD892304A2D84 /* CapyWidgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CapyWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		06FA0C6C48BBE0F1C319C82B /* History */ = {
+			isa = PBXGroup;
+			children = (
+				4D756BF15D71C2F46C159048 /* HistoryView.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		1D7039FC81875832EC272A2C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				892BE7B049451653FC787389 /* CapyModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2EDA76A3030F67A16BED7E5C /* CapyWidget */ = {
+			isa = PBXGroup;
+			children = (
+				29026EECC5C1CD43AE42A566 /* CapyWidget.entitlements */,
+				D570CA600410EFDEA39B1948 /* CapyWidget.swift */,
+				D020FE9C43C773BF3390E464 /* CapyWidgetViews.swift */,
+				0B2B9DD4FBE140C79AEBABB6 /* Info.plist */,
+				BDCB42A4D0669931F3930440 /* WidgetSceneBackground.swift */,
+			);
+			path = CapyWidget;
+			sourceTree = "<group>";
+		};
+		3BA69EAFBBEEF6B38BBA44F7 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F7458236431254F155F2292C /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		48ABF9FBA12BB89F3F0D4CF2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DC1A050C01A44861ED01B4DC /* HomeView.swift */,
+				593B0BFBC3E877D5512A8639 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		69DAFC1773D634DC22E66AFD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2F48102375A9E84F5CF2EDBE /* AppConstants.swift */,
+				058CA251A3D2E80770B39C47 /* CapyApp.swift */,
+				456E6599AB110C9D8E28E668 /* CapyAppState.swift */,
+				DEAA7840AF340C59A031D043 /* CapyNotificationDelegate.swift */,
+				0DE01A5204AE19B801BF222B /* CapyRootView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6EB924E499DD495F3046FF60 = {
+			isa = PBXGroup;
+			children = (
+				74C58A6B0136D6FC67DEA74D /* Capy */,
+				EE57C10760E33A44BC8323FF /* CapyTests */,
+				2EDA76A3030F67A16BED7E5C /* CapyWidget */,
+				7CD09EE4833EA24555341E27 /* Config */,
+				BA7A46DCA6D0F612D47FDE45 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		74C58A6B0136D6FC67DEA74D /* Capy */ = {
+			isa = PBXGroup;
+			children = (
+				A07A7AFEE09A8C2B367BB249 /* Assets.xcassets */,
+				A4D5D59732242D02FF863A45 /* Capy.entitlements */,
+				F677FD873F77420018F46EAC /* Info.plist */,
+				69DAFC1773D634DC22E66AFD /* App */,
+				D1489A67903C5FA5F581709E /* Design */,
+				A70EB94155CBBA8FDDA45888 /* Engine */,
+				EF2F9580D98B2233B3CCDD7B /* Features */,
+				1D7039FC81875832EC272A2C /* Models */,
+				CAA2E640B4AA3E0ADC319A3A /* Resources */,
+				BFB59B23365A86EFC00B8384 /* Services */,
+			);
+			path = Capy;
+			sourceTree = "<group>";
+		};
+		7CD09EE4833EA24555341E27 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				DDF5770FB86AEB11C53B2A72 /* Debug.xcconfig */,
+				1F562B585AC4E2E98692FE40 /* Release.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		9A5CCE2369AC436CA9193C6C /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				615B2DD3C01D49317E21689F /* CameraFlowView.swift */,
+				400F3E83EE01E58E050BBBB4 /* CameraPreviewView.swift */,
+				1B918F7145BE02EC43DB7094 /* CameraService.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		A70EB94155CBBA8FDDA45888 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				952119B1453DA90AD22243CE /* AvatarState.swift */,
+				AA6DF1F594EE6776E793EFE6 /* CapyClock.swift */,
+				DF5A32A9A61E3439C4AFB07F /* CapyEngine.swift */,
+				998F014542762C90C7564171 /* CapyMascotPhase.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		BA7A46DCA6D0F612D47FDE45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A302ED7864A0678D5886BC94 /* Capy.app */,
+				08BEAFD83B1B1A2E1D2358BD /* CapyTests.xctest */,
+				FEFB823754EDD892304A2D84 /* CapyWidgets.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFB59B23365A86EFC00B8384 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0B18193406A3DC61B2E5F586 /* CapyNotifications.swift */,
+				943AE0820F712867E75D5D02 /* CapyReconciler.swift */,
+				6BD8C2D0020BA3ABA80072FF /* DayHistoryHelper.swift */,
+				4209879B2930B0EBD078EBFA /* FeedService.swift */,
+				9A393858B48E6FDEB11DBE43 /* PhotoStore.swift */,
+				DBB686AF8582D96E22A7ECCE /* SharedStore.swift */,
+				A7EF909872CFED9201169C58 /* WidgetReloader.swift */,
+				0F625A550186070CFBDA3E93 /* WidgetSnapshot.swift */,
+				9D04DC96B7DECD52A27CB287 /* WidgetTimelineBuilder.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CAA2E640B4AA3E0ADC319A3A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D4A4A151DFFB506C29464266 /* Fonts */,
+				FC7F581B21B2F666A831B41C /* Mascot */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D0F6BE3157D0C7D2296A0B04 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				03928A8F900984AEEB58D56C /* OnboardingFlowView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		D1489A67903C5FA5F581709E /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				B63F4F805532B0C6638E1C46 /* AvatarView.swift */,
+				466A85AFCFADB74F3B2CD8B0 /* CapyComponents.swift */,
+				D8D2243B75895573A09E545A /* CapyFontLoader.swift */,
+				6DE857BCE4CCA3BE49B91499 /* CapyFontResolver.swift */,
+				B5E5C252D974BA2E8714F590 /* CapyTextStyles.swift */,
+				D62AB9CDF09CA242EE5B7EDD /* DotGridBackground.swift */,
+				23DC891B98FD87E466164E1F /* HeroCapyCard.swift */,
+				931F700C7FD2BF8A29CB4A21 /* HeroCard.swift */,
+				59BED309571FFD5AA7916681 /* MascotView.swift */,
+				26ED11A585416B53E1C7EDEB /* PaperBackground.swift */,
+				70A2BCF36C6B8A8FAC56B7AB /* Theme.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		D4A4A151DFFB506C29464266 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				396191DF7C55F110B9A0FECB /* Fredoka-Bold.ttf */,
+				2B257D0D25D6DAF14E9C7F36 /* Fredoka-SemiBold.ttf */,
+				4F3F99AD18316DA40C291517 /* Nunito-Bold.ttf */,
+				342AF8E2D571394CF284AE8C /* Nunito-ExtraBold.ttf */,
+				420962B64B921817B2E5656F /* Nunito-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		EA3DC341CB0C63A09A13F438 /* Fed */ = {
+			isa = PBXGroup;
+			children = (
+				7B1166C601A8511EC18C40E1 /* FedView.swift */,
+			);
+			path = Fed;
+			sourceTree = "<group>";
+		};
+		EE57C10760E33A44BC8323FF /* CapyTests */ = {
+			isa = PBXGroup;
+			children = (
+				0EB411E93700A9A63C72332B /* AvatarStateTests.swift */,
+				6ADB4DAAF423854C3DAFAE57 /* CapyDayStatusTests.swift */,
+				6B52CBC2BAE03632A6C24901 /* CapyEngineTests.swift */,
+				26E82DFAE1F0E6167C525099 /* CapyMascotPhaseTests.swift */,
+			);
+			path = CapyTests;
+			sourceTree = "<group>";
+		};
+		EF2F9580D98B2233B3CCDD7B /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				9A5CCE2369AC436CA9193C6C /* Camera */,
+				EA3DC341CB0C63A09A13F438 /* Fed */,
+				06FA0C6C48BBE0F1C319C82B /* History */,
+				48ABF9FBA12BB89F3F0D4CF2 /* Home */,
+				D0F6BE3157D0C7D2296A0B04 /* Onboarding */,
+				3BA69EAFBBEEF6B38BBA44F7 /* Settings */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		FC7F581B21B2F666A831B41C /* Mascot */ = {
+			isa = PBXGroup;
+			children = (
+				B2FE2B2BD329CA8151F98BDB /* panel_0.jpg */,
+				2209D824EADD6794CC4E2A00 /* panel_1.jpg */,
+				E26B414483B06C84F3690459 /* panel_2.jpg */,
+				CA82695531E177F016E174A0 /* panel_3.jpg */,
+			);
+			path = Mascot;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		250738363BC6AB61D412B7A8 /* CapyWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3A996349F8A43EE15E9E3A1 /* Build configuration list for PBXNativeTarget "CapyWidgetExtension" */;
+			buildPhases = (
+				086D64822C283D58F08BF5D6 /* Sources */,
+				9AD66A98D6A48A511BDFA670 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CapyWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = CapyWidgetExtension;
+			productReference = FEFB823754EDD892304A2D84 /* CapyWidgets.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		CF92C0942ACD23C765D9FE92 /* Capy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15719F38AE64D0E2C0CC7267 /* Build configuration list for PBXNativeTarget "Capy" */;
+			buildPhases = (
+				C2D78EA08CFA7182DAA9E4CF /* Sources */,
+				D721ECFBCD89CD975C0E6A0B /* Resources */,
+				554EB104FCC50A258A584803 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63D69E85EB8743B3567049AC /* PBXTargetDependency */,
+			);
+			name = Capy;
+			packageProductDependencies = (
+			);
+			productName = Capy;
+			productReference = A302ED7864A0678D5886BC94 /* Capy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC9B085C2F6BB7791D3C40DC /* CapyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7942AE82A50D5A1024CBB81 /* Build configuration list for PBXNativeTarget "CapyTests" */;
+			buildPhases = (
+				D8F2AC31109B8AE45889E4B6 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3AA310A43A0721E2EEE223F2 /* PBXTargetDependency */,
+			);
+			name = CapyTests;
+			packageProductDependencies = (
+			);
+			productName = CapyTests;
+			productReference = 08BEAFD83B1B1A2E1D2358BD /* CapyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E4E830B316C10EC01F8C376 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 64051844EFBE1B3C0D68D38A /* Build configuration list for PBXProject "Capy" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 6EB924E499DD495F3046FF60;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = BA7A46DCA6D0F612D47FDE45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF92C0942ACD23C765D9FE92 /* Capy */,
+				250738363BC6AB61D412B7A8 /* CapyWidgetExtension */,
+				EC9B085C2F6BB7791D3C40DC /* CapyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9AD66A98D6A48A511BDFA670 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44C9D9719698DADC7C82D125 /* Assets.xcassets in Resources */,
+				CAE1CDDAE98E90BA63FA33A1 /* panel_0.jpg in Resources */,
+				B7C5820C29DECE3BDAA8F38E /* panel_1.jpg in Resources */,
+				4E9894EA2E55673C15C5EFB7 /* panel_2.jpg in Resources */,
+				74F88D7991E9E7235F43C245 /* panel_3.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D721ECFBCD89CD975C0E6A0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5EF4D329A42F6D190CA88FE /* Assets.xcassets in Resources */,
+				D79839038816E05123AFAFC5 /* Fredoka-Bold.ttf in Resources */,
+				5B847FE7E34CC29A40CFCF1C /* Fredoka-SemiBold.ttf in Resources */,
+				CBE3C431E6710C7661499E61 /* Nunito-Bold.ttf in Resources */,
+				633663FAAD1695AFD361656D /* Nunito-ExtraBold.ttf in Resources */,
+				55A0A7B2C06885FBF0D397EC /* Nunito-SemiBold.ttf in Resources */,
+				CEB462F9B6093021CB0F7695 /* panel_0.jpg in Resources */,
+				872B670163F554FADF39B4FE /* panel_1.jpg in Resources */,
+				5A58734C7C4E8FE016DF8A8C /* panel_2.jpg in Resources */,
+				6989EECFC0871923E5832651 /* panel_3.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		086D64822C283D58F08BF5D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				140280F2500108CC1AC78044 /* AppConstants.swift in Sources */,
+				BD7839BA537E532ED0356114 /* AvatarState.swift in Sources */,
+				66063B086627D95D979121DE /* AvatarView.swift in Sources */,
+				47440CF0D32F28D184FB6AB7 /* CapyClock.swift in Sources */,
+				519F539DA2E5FF616A3F06C6 /* CapyComponents.swift in Sources */,
+				2EF6CC60891D634DBDB59EA9 /* CapyEngine.swift in Sources */,
+				E1D04880B6A2AB3C4DF4A34D /* CapyFontLoader.swift in Sources */,
+				4AE6683EBD94610F619CDEE6 /* CapyFontResolver.swift in Sources */,
+				718F6CF21E19C447000C7E6C /* CapyMascotPhase.swift in Sources */,
+				1D38AA799D290C69994E049B /* CapyModels.swift in Sources */,
+				B0F8E296F842FFDB26D17E7C /* CapyNotifications.swift in Sources */,
+				75EC988651A3FE5922445A50 /* CapyReconciler.swift in Sources */,
+				6AB117FDCDC60C65AE7217A6 /* CapyTextStyles.swift in Sources */,
+				4185E8A65C87F6665564250F /* CapyWidget.swift in Sources */,
+				C9C71056226AFDA1A86E0F83 /* CapyWidgetViews.swift in Sources */,
+				D86EFDB396D0229EBD1F36AE /* DayHistoryHelper.swift in Sources */,
+				C8BBBA73C78AF00EAF5532BF /* DotGridBackground.swift in Sources */,
+				1715F64132CFC63BE75E043D /* FeedService.swift in Sources */,
+				0B45EB247467B3AD2C3CBD57 /* HeroCapyCard.swift in Sources */,
+				483340A83444E268D08773E0 /* HeroCard.swift in Sources */,
+				33A3F712DE92E61A2E8CCB5D /* MascotView.swift in Sources */,
+				70BE3EE91D8B329273D80BAA /* PaperBackground.swift in Sources */,
+				674B2E353AFDBACA7E02E9D3 /* PhotoStore.swift in Sources */,
+				E3156A54B9949349716C91A0 /* SharedStore.swift in Sources */,
+				2251DEC6FE9C59A0E56E45A3 /* Theme.swift in Sources */,
+				F7A0B9D3C37F1C988DDBBEED /* WidgetReloader.swift in Sources */,
+				78976E4A970D0F066B19FFF4 /* WidgetSceneBackground.swift in Sources */,
+				EE601523908208D92BFAF666 /* WidgetSnapshot.swift in Sources */,
+				C2A8F88655F90DF7E0C9B4EB /* WidgetTimelineBuilder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2D78EA08CFA7182DAA9E4CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09976FCEE9107BA1F019B23A /* AppConstants.swift in Sources */,
+				F425CA58DFE60AB3A8A1A7E5 /* AvatarState.swift in Sources */,
+				31C559C73A6678E1BA24FE8D /* AvatarView.swift in Sources */,
+				9D3E4CB8339F5C0B6AD4C713 /* CameraFlowView.swift in Sources */,
+				36FB88439F79E52357CACDCA /* CameraPreviewView.swift in Sources */,
+				769BCDE29B5AF9B290E59358 /* CameraService.swift in Sources */,
+				3FB31D9285A1617A49E9A74B /* CapyApp.swift in Sources */,
+				8C92D018580BCC7AC5107978 /* CapyAppState.swift in Sources */,
+				1B91295DCEBEBA2C32783237 /* CapyClock.swift in Sources */,
+				41F82C158CD749769D34A0EB /* CapyComponents.swift in Sources */,
+				CA44ECF3579BFABCAEA24856 /* CapyEngine.swift in Sources */,
+				26D831EA138B4ABDDA5DDADB /* CapyFontLoader.swift in Sources */,
+				C2ED911C77CB810B82DDEB3C /* CapyFontResolver.swift in Sources */,
+				BDB74CFCF02CB9187577BF73 /* CapyMascotPhase.swift in Sources */,
+				B45D78A8F65513B38706EAA8 /* CapyModels.swift in Sources */,
+				168659BAE832728C24098916 /* CapyNotificationDelegate.swift in Sources */,
+				07BEBE55C8310D758CE1F23B /* CapyNotifications.swift in Sources */,
+				3AF724353E12683A7F65629B /* CapyReconciler.swift in Sources */,
+				71D89E429263D536CA832DD3 /* CapyRootView.swift in Sources */,
+				9F0AC95645C534E6ED76056C /* CapyTextStyles.swift in Sources */,
+				E55DDBEC7A4EA5EB09FFCC1C /* DayHistoryHelper.swift in Sources */,
+				A19DC6CE4013CD2717C31608 /* DotGridBackground.swift in Sources */,
+				50E927F6DF9C7D30B8616739 /* FedView.swift in Sources */,
+				591320C501A45A9A9DE52F62 /* FeedService.swift in Sources */,
+				245B60E2781C2E9AED07FFAD /* HeroCapyCard.swift in Sources */,
+				9D4E9F89A689EFE62A5BC1E6 /* HeroCard.swift in Sources */,
+				CF353D567E6C6186E97540B6 /* HistoryView.swift in Sources */,
+				18951B39ED6614F51A432FE2 /* HomeView.swift in Sources */,
+				8B40DE252E929858FFA37EA4 /* HomeViewModel.swift in Sources */,
+				B7C9FC70CE8DDDFCF44BE364 /* MascotView.swift in Sources */,
+				E76D869438F2AD8A81A7A55B /* OnboardingFlowView.swift in Sources */,
+				25015305833174754602B44C /* PaperBackground.swift in Sources */,
+				A65BB53CB0FB62BB2FD66034 /* PhotoStore.swift in Sources */,
+				95ED82EE20C312AE22FDC6DA /* SettingsView.swift in Sources */,
+				F25B61C2F2999111604D857A /* SharedStore.swift in Sources */,
+				1F43CD32FDB746C7C5781200 /* Theme.swift in Sources */,
+				EA17B6C8959B7872DF073033 /* WidgetReloader.swift in Sources */,
+				C2172DA1F1E44436EA9DE9A0 /* WidgetSnapshot.swift in Sources */,
+				A41A56ED017DBECC60A03D61 /* WidgetTimelineBuilder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8F2AC31109B8AE45889E4B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC5C8E8653E38703E36D9576 /* AvatarStateTests.swift in Sources */,
+				A96A9CC4726346E22CA858A6 /* CapyDayStatusTests.swift in Sources */,
+				38BA9D44CB2C84BF9EF51FAF /* CapyEngineTests.swift in Sources */,
+				B6413454678D3F0F6B5184AA /* CapyMascotPhaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3AA310A43A0721E2EEE223F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF92C0942ACD23C765D9FE92 /* Capy */;
+			targetProxy = 2BD01F927E02F148C5AEF96B /* PBXContainerItemProxy */;
+		};
+		63D69E85EB8743B3567049AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 250738363BC6AB61D412B7A8 /* CapyWidgetExtension */;
+			targetProxy = 97A10B23F13A15E1E516CBC8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D27A4E21538745EF8F3C55B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		48676ED238E8C6A33693BA7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F562B585AC4E2E98692FE40 /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = Capy/Capy.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BYY4A7U6RR;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Capy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxpjeff.capy;
+				PRODUCT_NAME = Capy;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5A05321B34F2088C6080C718 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDF5770FB86AEB11C53B2A72 /* Debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = Capy/Capy.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BYY4A7U6RR;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Capy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxpjeff.capy;
+				PRODUCT_NAME = Capy;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		898235031BBEE1E74E846B59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDF5770FB86AEB11C53B2A72 /* Debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CapyWidget/CapyWidget.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BYY4A7U6RR;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = CapyWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxpjeff.capy.widget;
+				PRODUCT_NAME = CapyWidgets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		898C3E5D71D85E0978F95B30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxpjeff.capy.tests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Capy.app/Capy";
+			};
+			name = Release;
+		};
+		957DF27D4AAC4AF4F406A012 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxpjeff.capy.tests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Capy.app/Capy";
+			};
+			name = Debug;
+		};
+		B5016F129D7F210E216D22D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F562B585AC4E2E98692FE40 /* Release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CapyWidget/CapyWidget.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BYY4A7U6RR;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = CapyWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxpjeff.capy.widget;
+				PRODUCT_NAME = CapyWidgets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D4D40E7AD0B6B00E4DE3BA27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15719F38AE64D0E2C0CC7267 /* Build configuration list for PBXNativeTarget "Capy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A05321B34F2088C6080C718 /* Debug */,
+				48676ED238E8C6A33693BA7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		64051844EFBE1B3C0D68D38A /* Build configuration list for PBXProject "Capy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4D40E7AD0B6B00E4DE3BA27 /* Debug */,
+				1D27A4E21538745EF8F3C55B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B3A996349F8A43EE15E9E3A1 /* Build configuration list for PBXNativeTarget "CapyWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				898235031BBEE1E74E846B59 /* Debug */,
+				B5016F129D7F210E216D22D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D7942AE82A50D5A1024CBB81 /* Build configuration list for PBXNativeTarget "CapyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				957DF27D4AAC4AF4F406A012 /* Debug */,
+				898C3E5D71D85E0978F95B30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4E4E830B316C10EC01F8C376 /* Project object */;
+}

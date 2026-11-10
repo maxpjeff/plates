@@ -1,5 +1,7 @@
 # Xcode
 DerivedData/
+.derivedData/
+.cursor/
 *.xcuserstate
 *.xcuserdatad/
 xcuserdata/
@@ -17,6 +19,7 @@ Package.resolved
 
 # Secrets — never commit real keys
 Secrets.xcconfig
+Signing.xcconfig
 Plates/Secrets.plist
 
 # macOS

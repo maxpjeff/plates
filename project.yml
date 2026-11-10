@@ -1,31 +1,87 @@
-name: Plates
+name: Capy
 options:
   bundleIdPrefix: com.maxpjeff
   deploymentTarget:
     iOS: "17.0"
   xcodeVersion: "15.0"
-packages:
-  Supabase:
-    url: https://github.com/supabase/supabase-swift
-    from: 2.31.0
 targets:
-  Plates:
+  Capy:
     type: application
     platform: iOS
     sources:
-      - path: Plates
+      - path: Capy
+    resources:
+      - path: Capy/Resources
+      - path: Capy/Assets.xcassets
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.maxpjeff.plates
+        PRODUCT_BUNDLE_IDENTIFIER: com.maxpjeff.capy
         MARKETING_VERSION: "1.0.0"
         CURRENT_PROJECT_VERSION: "1"
         GENERATE_INFOPLIST_FILE: NO
-        INFOPLIST_FILE: Plates/Info.plist
-        SWIFT_VERSION: "5.0"
-        DEVELOPMENT_TEAM: ""
-    dependencies:
-      - package: Supabase
-        product: Supabase
+        INFOPLIST_FILE: Capy/Info.plist
+        CODE_SIGN_ENTITLEMENTS: Capy/Capy.entitlements
+        SWIFT_VERSION: "5.9"
+        ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS: YES
+        PRODUCT_NAME: Capy
     configFiles:
       Debug: Config/Debug.xcconfig
       Release: Config/Release.xcconfig
+    dependencies:
+      - target: CapyWidgetExtension
+        embed: true
+  CapyWidgetExtension:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CapyWidget
+      - path: Capy
+        excludes:
+          - App/CapyApp.swift
+          - App/CapyRootView.swift
+          - App/CapyAppState.swift
+          - App/CapyNotificationDelegate.swift
+          - Features/**
+          - Info.plist
+          - Resources/Fonts/**
+          - "**/*.entitlements"
+    resources:
+      - path: Capy/Resources/Fonts
+      - path: Capy/Assets.xcassets
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.maxpjeff.capy.widget
+        MARKETING_VERSION: "1.0.0"
+        CURRENT_PROJECT_VERSION: "1"
+        GENERATE_INFOPLIST_FILE: NO
+        INFOPLIST_FILE: CapyWidget/Info.plist
+        CODE_SIGN_ENTITLEMENTS: CapyWidget/CapyWidget.entitlements
+        SWIFT_VERSION: "5.9"
+        PRODUCT_NAME: CapyWidgets
+        SKIP_INSTALL: YES
+    configFiles:
+      Debug: Config/Debug.xcconfig
+      Release: Config/Release.xcconfig
+  CapyTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: CapyTests
+    dependencies:
+      - target: Capy
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        SWIFT_VERSION: "5.9"
+        PRODUCT_BUNDLE_IDENTIFIER: com.maxpjeff.capy.tests
+schemes:
+  Capy:
+    build:
+      targets:
+        Capy: all
+        CapyTests: [test]
+    run:
+      config: Debug
+    test:
+      targets:
+        - CapyTests
