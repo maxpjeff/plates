@@ -51,59 +51,17 @@ enum AvatarState: String, CaseIterable, Equatable {
         switch self {
         case .lockedIn: "Locked in"
         case .recovering: "Recovering"
-        case .couchMode: "Couch mode"
+        case .couchMode: "Lazy"
         case .streakLost: "Chud"
         }
     }
 
-    var sceneColor: Color {
-        switch self {
-        case .lockedIn: Color(capyHex: "E6F4D7")
-        case .recovering: Color(capyHex: "FBE7BE")
-        case .couchMode: Color(capyHex: "E3DAF2")
-        case .streakLost: Color(capyHex: "F8D5D9")
-        }
-    }
-
-    var sceneDotColor: Color {
-        switch self {
-        case .lockedIn: Color(capyHex: "C8E4B0")
-        case .recovering: Color(capyHex: "E8CF9A")
-        case .couchMode: Color(capyHex: "C8B8E0")
-        case .streakLost: Color(capyHex: "E8B8C0")
-        }
-    }
-
-    var pillColor: Color {
-        switch self {
-        case .lockedIn: Color(capyHex: "CFEFB4")
-        case .recovering: Color(capyHex: "FFD08A")
-        case .couchMode: Color(capyHex: "E3DAF2")
-        case .streakLost: Color(capyHex: "F8D5D9")
-        }
-    }
-
-    var pillTextColor: Color {
-        switch self {
-        case .lockedIn: Color(capyHex: "1F4A0B")
-        case .recovering: Color(capyHex: "5A2A04")
-        case .couchMode: Color(capyHex: "3C2A6B")
-        case .streakLost: Color(capyHex: "7A1F2B")
-        }
-    }
-
-    var todayBarTextColor: Color {
-        switch self {
-        case .lockedIn: Color(capyHex: "1F4A0B")
-        case .recovering: Color(capyHex: "0D3B5C")
-        case .couchMode: Theme.Color.flame
-        case .streakLost: Color(capyHex: "B4B2A9")
-        }
-    }
-
-    var todayBarFillColor: Color {
-        Color(capyHex: CapyEngine.todayBarFillColor(for: self))
-    }
+    var sceneColor: Color { PxStatus(self).sceneColor }
+    var sceneDotColor: Color { PxStatus(self).sceneGrid }
+    var pillColor: Color { PxStatus(self).pillColor }
+    var pillTextColor: Color { PxStatus(self).pillText }
+    var todayBarTextColor: Color { PxStatus(self).accentText }
+    var todayBarFillColor: Color { PxStatus(self).barColor }
 
     var engineState: CapyState {
         switch self {
@@ -117,7 +75,7 @@ enum AvatarState: String, CaseIterable, Equatable {
     func feedButtonTitle(name: String) -> String {
         switch self {
         case .lockedIn, .recovering: "Feed \(name)"
-        case .couchMode: "Get \(name) off the couch"
+        case .couchMode: "Get \(name) moving"
         case .streakLost: "Wake \(name) up"
         }
     }

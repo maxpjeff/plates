@@ -59,7 +59,7 @@ struct CapyWidgetProvider: TimelineProvider {
             restWeekdays: [],
             streakStart: Date(),
             createdAt: Date(),
-            last7Days: Array(repeating: .missed, count: 7)
+            last7Days: Array(repeating: .fed, count: 7)
         )
         return CapyEntry(
             date: .now,
@@ -79,59 +79,25 @@ struct CapyWidgetEntryView: View {
     var body: some View {
         Group {
             if entry.snapshot == nil {
-                CapyWidgetPlaceholderView()
+                PixelBackground()
+                VStack(spacing: 8) {
+                    PixelIcon("pixel_camera", size: 28)
+                    Text("Open the app to meet your capybara")
+                        .font(PxFont.caption)
+                        .multilineTextAlignment(.center)
+                }
+                .foregroundStyle(Px.ink)
+                .padding()
             } else {
-                content
+                PxWidgetEntryView(model: WidgetPxModel.build(from: entry))
             }
         }
         .widgetURL(AppConstants.feedURL)
-        .containerBackground(for: .widget) {
-            switch family {
-            case .systemSmall:
-                if entry.snapshot != nil {
-                    WidgetDotPattern(base: entry.state.sceneColor, dot: entry.state.sceneDotColor)
-                } else {
-                    Theme.Color.card
-                }
-            case .systemMedium, .systemLarge:
-                if entry.snapshot != nil {
-                    WidgetDotPattern(base: entry.state.sceneColor, dot: entry.state.sceneDotColor)
-                } else {
-                    Theme.Color.card
-                }
-            default:
-                Color.clear
-            }
-        }
-    }
-
-    @ViewBuilder
-    private var content: some View {
-        switch family {
-        case .systemSmall:
-            CapySmallWidgetView(entry: entry)
-        case .systemMedium:
-            CapyMediumWidgetView(entry: entry)
-        case .systemLarge:
-            CapyLargeWidgetView(entry: entry)
-        case .accessoryCircular:
-            CapyLockCircularView(entry: entry)
-        case .accessoryRectangular:
-            CapyLockRectangularView(entry: entry)
-        case .accessoryInline:
-            CapyLockInlineView(entry: entry)
-        default:
-            CapySmallWidgetView(entry: entry)
-        }
     }
 }
 
 @main
 struct CapyWidgetBundle: WidgetBundle {
-    init() {
-        CapyFontLoader.loadIfNeeded()
-    }
-
     var body: some Widget {
         CapyWidget()
     }
@@ -154,90 +120,6 @@ struct CapyWidget: Widget {
             .accessoryRectangular,
             .accessoryInline,
         ])
+        .contentMarginsDisabled()
     }
-
-}
-
-// MARK: - Previews
-
-private func previewSnapshot() -> WidgetSnapshot {
-    WidgetSnapshot(
-        name: "Biscuit",
-        lastFeedDate: Date().addingTimeInterval(-8 * 3600),
-        feedDates: [Date()],
-        restWeekdays: [1],
-        streakStart: Calendar.current.date(byAdding: .day, value: -11, to: .now),
-        createdAt: Date(),
-        last7Days: [.rest, .fed, .fed, .fed, .fed, .fed, .today]
-    )
-}
-
-private func previewEntries() -> [CapyEntry] {
-    let snap = previewSnapshot()
-    return AvatarState.allCases.map { state in
-        CapyEntry(
-            date: .now,
-            snapshot: snap,
-            state: state,
-            todayFraction: state == .couchMode ? 0.6 : (state == .streakLost ? 0 : 1),
-            todayLabel: CapyEngine.todayBarLabel(
-                input: snap.engineInput(at: .now)
-            ),
-            streak: state == .streakLost ? 0 : 12
-        )
-    }
-}
-
-#Preview(as: .systemSmall) {
-    CapyWidget()
-} timeline: {
-    previewEntries()[0]
-    previewEntries()[1]
-    previewEntries()[2]
-    previewEntries()[3]
-}
-
-#Preview(as: .systemMedium) {
-    CapyWidget()
-} timeline: {
-    previewEntries()[0]
-    previewEntries()[1]
-    previewEntries()[2]
-    previewEntries()[3]
-}
-
-#Preview(as: .systemLarge) {
-    CapyWidget()
-} timeline: {
-    previewEntries()[0]
-    previewEntries()[1]
-    previewEntries()[2]
-    previewEntries()[3]
-}
-
-#Preview(as: .accessoryCircular) {
-    CapyWidget()
-} timeline: {
-    previewEntries()[0]
-    previewEntries()[1]
-    previewEntries()[2]
-    previewEntries()[3]
-}
-
-#Preview(as: .accessoryRectangular) {
-    CapyWidget()
-} timeline: {
-    previewEntries()[0]
-    previewEntries()[1]
-    previewEntries()[2]
-    previewEntries()[3]
-}
-
-#Preview(as: .accessoryInline) {
-    CapyWidget()
-} timeline: {
-    previewEntries()[0]
-    previewEntries()[1]
-    previewEntries()[2]
-    previewEntries()[3]
 }

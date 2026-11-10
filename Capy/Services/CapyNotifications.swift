@@ -32,7 +32,7 @@ enum CapyNotifications {
             if fire <= snapshot.at { continue }
 
             let content = UNMutableNotificationContent()
-            content.title = "\(snapshot.capyName) is on the couch"
+            content.title = "\(snapshot.capyName) is getting lazy"
             content.body = "Hey, gotta get your workout in."
             content.userInfo = ["open": "feed"]
 

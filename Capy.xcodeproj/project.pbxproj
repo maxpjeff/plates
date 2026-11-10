@@ -8,84 +8,69 @@
 
 /* Begin PBXBuildFile section */
 		07BEBE55C8310D758CE1F23B /* CapyNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B18193406A3DC61B2E5F586 /* CapyNotifications.swift */; };
+		08396C6C2942B78A7DAA34AC /* PixelifySans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 638AD9347838F7CCCBBF2BD2 /* PixelifySans-SemiBold.ttf */; };
+		0912C827D04F3CEBEA0FA879 /* PxCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6851E784E25FDCC38683F1 /* PxCameraView.swift */; };
 		09976FCEE9107BA1F019B23A /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F48102375A9E84F5CF2EDBE /* AppConstants.swift */; };
-		0B45EB247467B3AD2C3CBD57 /* HeroCapyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DC891B98FD87E466164E1F /* HeroCapyCard.swift */; };
+		0A00D983E018025C655C84B6 /* PxTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45310480932EC767119FDD05 /* PxTheme.swift */; };
+		0AA0128896CD1770553AA71D /* WidgetPxModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE656F7452F5E4973205AF2 /* WidgetPxModel.swift */; };
 		140280F2500108CC1AC78044 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F48102375A9E84F5CF2EDBE /* AppConstants.swift */; };
 		168659BAE832728C24098916 /* CapyNotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAA7840AF340C59A031D043 /* CapyNotificationDelegate.swift */; };
 		1715F64132CFC63BE75E043D /* FeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4209879B2930B0EBD078EBFA /* FeedService.swift */; };
 		18951B39ED6614F51A432FE2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1A050C01A44861ED01B4DC /* HomeView.swift */; };
 		1B91295DCEBEBA2C32783237 /* CapyClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6DF1F594EE6776E793EFE6 /* CapyClock.swift */; };
 		1D38AA799D290C69994E049B /* CapyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892BE7B049451653FC787389 /* CapyModels.swift */; };
-		1F43CD32FDB746C7C5781200 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A2BCF36C6B8A8FAC56B7AB /* Theme.swift */; };
-		2251DEC6FE9C59A0E56E45A3 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A2BCF36C6B8A8FAC56B7AB /* Theme.swift */; };
-		245B60E2781C2E9AED07FFAD /* HeroCapyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DC891B98FD87E466164E1F /* HeroCapyCard.swift */; };
-		25015305833174754602B44C /* PaperBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ED11A585416B53E1C7EDEB /* PaperBackground.swift */; };
-		26D831EA138B4ABDDA5DDADB /* CapyFontLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D2243B75895573A09E545A /* CapyFontLoader.swift */; };
 		2EF6CC60891D634DBDB59EA9 /* CapyEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5A32A9A61E3439C4AFB07F /* CapyEngine.swift */; };
-		31C559C73A6678E1BA24FE8D /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63F4F805532B0C6638E1C46 /* AvatarView.swift */; };
-		33A3F712DE92E61A2E8CCB5D /* MascotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BED309571FFD5AA7916681 /* MascotView.swift */; };
 		36FB88439F79E52357CACDCA /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400F3E83EE01E58E050BBBB4 /* CameraPreviewView.swift */; };
 		38BA9D44CB2C84BF9EF51FAF /* CapyEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B52CBC2BAE03632A6C24901 /* CapyEngineTests.swift */; };
+		3A1CE16AD12A6CD49052D711 /* PxHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09ADEC30F221417C0339E76 /* PxHomeView.swift */; };
 		3AF724353E12683A7F65629B /* CapyReconciler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943AE0820F712867E75D5D02 /* CapyReconciler.swift */; };
 		3FB31D9285A1617A49E9A74B /* CapyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058CA251A3D2E80770B39C47 /* CapyApp.swift */; };
 		4185E8A65C87F6665564250F /* CapyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D570CA600410EFDEA39B1948 /* CapyWidget.swift */; };
-		41F82C158CD749769D34A0EB /* CapyComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466A85AFCFADB74F3B2CD8B0 /* CapyComponents.swift */; };
+		418BD42FD43522EF57A5F7B2 /* PxTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45310480932EC767119FDD05 /* PxTheme.swift */; };
 		44C9D9719698DADC7C82D125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A07A7AFEE09A8C2B367BB249 /* Assets.xcassets */; };
 		47440CF0D32F28D184FB6AB7 /* CapyClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6DF1F594EE6776E793EFE6 /* CapyClock.swift */; };
-		483340A83444E268D08773E0 /* HeroCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931F700C7FD2BF8A29CB4A21 /* HeroCard.swift */; };
-		4AE6683EBD94610F619CDEE6 /* CapyFontResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE857BCE4CCA3BE49B91499 /* CapyFontResolver.swift */; };
 		4E9894EA2E55673C15C5EFB7 /* panel_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E26B414483B06C84F3690459 /* panel_2.jpg */; };
 		50E927F6DF9C7D30B8616739 /* FedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1166C601A8511EC18C40E1 /* FedView.swift */; };
-		519F539DA2E5FF616A3F06C6 /* CapyComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466A85AFCFADB74F3B2CD8B0 /* CapyComponents.swift */; };
-		55A0A7B2C06885FBF0D397EC /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 420962B64B921817B2E5656F /* Nunito-SemiBold.ttf */; };
 		591320C501A45A9A9DE52F62 /* FeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4209879B2930B0EBD078EBFA /* FeedService.swift */; };
 		5A58734C7C4E8FE016DF8A8C /* panel_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E26B414483B06C84F3690459 /* panel_2.jpg */; };
-		5B847FE7E34CC29A40CFCF1C /* Fredoka-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B257D0D25D6DAF14E9C7F36 /* Fredoka-SemiBold.ttf */; };
-		633663FAAD1695AFD361656D /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 342AF8E2D571394CF284AE8C /* Nunito-ExtraBold.ttf */; };
-		66063B086627D95D979121DE /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63F4F805532B0C6638E1C46 /* AvatarView.swift */; };
+		65B298D0F408E55D31A50CC8 /* PixelifySans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6B71FB9F29C76455EDBB545 /* PixelifySans-Bold.ttf */; };
 		674B2E353AFDBACA7E02E9D3 /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A393858B48E6FDEB11DBE43 /* PhotoStore.swift */; };
 		6989EECFC0871923E5832651 /* panel_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CA82695531E177F016E174A0 /* panel_3.jpg */; };
-		6AB117FDCDC60C65AE7217A6 /* CapyTextStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E5C252D974BA2E8714F590 /* CapyTextStyles.swift */; };
-		70BE3EE91D8B329273D80BAA /* PaperBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ED11A585416B53E1C7EDEB /* PaperBackground.swift */; };
+		6F65C565590558A6744B1343 /* PixelifySans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7B148BE3A7E3C2AD917007D4 /* PixelifySans-Regular.ttf */; };
 		718F6CF21E19C447000C7E6C /* CapyMascotPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998F014542762C90C7564171 /* CapyMascotPhase.swift */; };
 		71D89E429263D536CA832DD3 /* CapyRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE01A5204AE19B801BF222B /* CapyRootView.swift */; };
 		74F88D7991E9E7235F43C245 /* panel_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CA82695531E177F016E174A0 /* panel_3.jpg */; };
 		75EC988651A3FE5922445A50 /* CapyReconciler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943AE0820F712867E75D5D02 /* CapyReconciler.swift */; };
 		769BCDE29B5AF9B290E59358 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B918F7145BE02EC43DB7094 /* CameraService.swift */; };
-		78976E4A970D0F066B19FFF4 /* WidgetSceneBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCB42A4D0669931F3930440 /* WidgetSceneBackground.swift */; };
 		872B670163F554FADF39B4FE /* panel_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2209D824EADD6794CC4E2A00 /* panel_1.jpg */; };
 		8B40DE252E929858FFA37EA4 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593B0BFBC3E877D5512A8639 /* HomeViewModel.swift */; };
 		8C92D018580BCC7AC5107978 /* CapyAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456E6599AB110C9D8E28E668 /* CapyAppState.swift */; };
+		915088C8FC48B573A4B76382 /* PixelifySans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 862777C22630A2FA8E63A8E8 /* PixelifySans-Medium.ttf */; };
 		95ED82EE20C312AE22FDC6DA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7458236431254F155F2292C /* SettingsView.swift */; };
+		96E4A40AEB5D437898827C3D /* PxFedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB618FA7CC5C1E44D6DEBC4C /* PxFedView.swift */; };
 		9D3E4CB8339F5C0B6AD4C713 /* CameraFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615B2DD3C01D49317E21689F /* CameraFlowView.swift */; };
-		9D4E9F89A689EFE62A5BC1E6 /* HeroCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931F700C7FD2BF8A29CB4A21 /* HeroCard.swift */; };
-		9F0AC95645C534E6ED76056C /* CapyTextStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E5C252D974BA2E8714F590 /* CapyTextStyles.swift */; };
-		A19DC6CE4013CD2717C31608 /* DotGridBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AB9CDF09CA242EE5B7EDD /* DotGridBackground.swift */; };
 		A41A56ED017DBECC60A03D61 /* WidgetTimelineBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04DC96B7DECD52A27CB287 /* WidgetTimelineBuilder.swift */; };
 		A65BB53CB0FB62BB2FD66034 /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A393858B48E6FDEB11DBE43 /* PhotoStore.swift */; };
+		A9422908565252FCFB04DBFF /* PxWidgetViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE122ECA833CA8F8A0329B4 /* PxWidgetViews.swift */; };
 		A96A9CC4726346E22CA858A6 /* CapyDayStatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADB4DAAF423854C3DAFAE57 /* CapyDayStatusTests.swift */; };
 		B0F8E296F842FFDB26D17E7C /* CapyNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B18193406A3DC61B2E5F586 /* CapyNotifications.swift */; };
 		B45D78A8F65513B38706EAA8 /* CapyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892BE7B049451653FC787389 /* CapyModels.swift */; };
 		B6413454678D3F0F6B5184AA /* CapyMascotPhaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E82DFAE1F0E6167C525099 /* CapyMascotPhaseTests.swift */; };
 		B7C5820C29DECE3BDAA8F38E /* panel_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2209D824EADD6794CC4E2A00 /* panel_1.jpg */; };
-		B7C9FC70CE8DDDFCF44BE364 /* MascotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BED309571FFD5AA7916681 /* MascotView.swift */; };
 		BC5C8E8653E38703E36D9576 /* AvatarStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB411E93700A9A63C72332B /* AvatarStateTests.swift */; };
 		BCFA7C3292B9CDC12091ACD4 /* CapyWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FEFB823754EDD892304A2D84 /* CapyWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BD7839BA537E532ED0356114 /* AvatarState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952119B1453DA90AD22243CE /* AvatarState.swift */; };
 		BDB74CFCF02CB9187577BF73 /* CapyMascotPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998F014542762C90C7564171 /* CapyMascotPhase.swift */; };
 		C2172DA1F1E44436EA9DE9A0 /* WidgetSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F625A550186070CFBDA3E93 /* WidgetSnapshot.swift */; };
 		C2A8F88655F90DF7E0C9B4EB /* WidgetTimelineBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04DC96B7DECD52A27CB287 /* WidgetTimelineBuilder.swift */; };
-		C2ED911C77CB810B82DDEB3C /* CapyFontResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE857BCE4CCA3BE49B91499 /* CapyFontResolver.swift */; };
-		C8BBBA73C78AF00EAF5532BF /* DotGridBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AB9CDF09CA242EE5B7EDD /* DotGridBackground.swift */; };
-		C9C71056226AFDA1A86E0F83 /* CapyWidgetViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D020FE9C43C773BF3390E464 /* CapyWidgetViews.swift */; };
+		C4CA59807D22EF320BFB8A07 /* PxModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A755411F9959FEC31BBFE8A6 /* PxModelBuilder.swift */; };
 		CA44ECF3579BFABCAEA24856 /* CapyEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5A32A9A61E3439C4AFB07F /* CapyEngine.swift */; };
 		CAE1CDDAE98E90BA63FA33A1 /* panel_0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2FE2B2BD329CA8151F98BDB /* panel_0.jpg */; };
-		CBE3C431E6710C7661499E61 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F3F99AD18316DA40C291517 /* Nunito-Bold.ttf */; };
+		CD518BE5A0B2D62F7E24D693 /* PxHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635873512812452E1554E89C /* PxHistoryView.swift */; };
 		CEB462F9B6093021CB0F7695 /* panel_0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2FE2B2BD329CA8151F98BDB /* panel_0.jpg */; };
 		CF353D567E6C6186E97540B6 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D756BF15D71C2F46C159048 /* HistoryView.swift */; };
-		D79839038816E05123AFAFC5 /* Fredoka-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 396191DF7C55F110B9A0FECB /* Fredoka-Bold.ttf */; };
+		D58589F957726ABCF7A19641 /* PxComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382C743210BFADDC914D52C7 /* PxComponents.swift */; };
 		D86EFDB396D0229EBD1F36AE /* DayHistoryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD8C2D0020BA3ABA80072FF /* DayHistoryHelper.swift */; };
-		E1D04880B6A2AB3C4DF4A34D /* CapyFontLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D2243B75895573A09E545A /* CapyFontLoader.swift */; };
 		E3156A54B9949349716C91A0 /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB686AF8582D96E22A7ECCE /* SharedStore.swift */; };
 		E55DDBEC7A4EA5EB09FFCC1C /* DayHistoryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD8C2D0020BA3ABA80072FF /* DayHistoryHelper.swift */; };
 		E5EF4D329A42F6D190CA88FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A07A7AFEE09A8C2B367BB249 /* Assets.xcassets */; };
@@ -95,6 +80,7 @@
 		F25B61C2F2999111604D857A /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB686AF8582D96E22A7ECCE /* SharedStore.swift */; };
 		F425CA58DFE60AB3A8A1A7E5 /* AvatarState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952119B1453DA90AD22243CE /* AvatarState.swift */; };
 		F7A0B9D3C37F1C988DDBBEED /* WidgetReloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EF909872CFED9201169C58 /* WidgetReloader.swift */; };
+		FCFF263C4BD515AC641442F4 /* PxComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382C743210BFADDC914D52C7 /* PxComponents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,58 +126,53 @@
 		1B918F7145BE02EC43DB7094 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
 		1F562B585AC4E2E98692FE40 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		2209D824EADD6794CC4E2A00 /* panel_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = panel_1.jpg; sourceTree = "<group>"; };
-		23DC891B98FD87E466164E1F /* HeroCapyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCapyCard.swift; sourceTree = "<group>"; };
 		26E82DFAE1F0E6167C525099 /* CapyMascotPhaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapyMascotPhaseTests.swift; sourceTree = "<group>"; };
-		26ED11A585416B53E1C7EDEB /* PaperBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperBackground.swift; sourceTree = "<group>"; };
 		29026EECC5C1CD43AE42A566 /* CapyWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CapyWidget.entitlements; sourceTree = "<group>"; };
-		2B257D0D25D6DAF14E9C7F36 /* Fredoka-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-SemiBold.ttf"; sourceTree = "<group>"; };
+		2C6851E784E25FDCC38683F1 /* PxCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PxCameraView.swift; sourceTree = "<group>"; };
 		2F48102375A9E84F5CF2EDBE /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
-		342AF8E2D571394CF284AE8C /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
-		396191DF7C55F110B9A0FECB /* Fredoka-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-Bold.ttf"; sourceTree = "<group>"; };
+		382C743210BFADDC914D52C7 /* PxComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PxComponents.swift; sourceTree = "<group>"; };
+		3AE656F7452F5E4973205AF2 /* WidgetPxModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetPxModel.swift; sourceTree = "<group>"; };
 		400F3E83EE01E58E050BBBB4 /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
-		420962B64B921817B2E5656F /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
 		4209879B2930B0EBD078EBFA /* FeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedService.swift; sourceTree = "<group>"; };
+		45310480932EC767119FDD05 /* PxTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PxTheme.swift; sourceTree = "<group>"; };
 		456E6599AB110C9D8E28E668 /* CapyAppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapyAppState.swift; sourceTree = "<group>"; };
-		466A85AFCFADB74F3B2CD8B0 /* CapyComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapyComponents.swift; sourceTree = "<group>"; };
 		4D756BF15D71C2F46C159048 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
-		4F3F99AD18316DA40C291517 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
 		593B0BFBC3E877D5512A8639 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		59BED309571FFD5AA7916681 /* MascotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MascotView.swift; sourceTree = "<group>"; };
 		615B2DD3C01D49317E21689F /* CameraFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFlowView.swift; sourceTree = "<group>"; };
+		635873512812452E1554E89C /* PxHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PxHistoryView.swift; sourceTree = "<group>"; };
+		638AD9347838F7CCCBBF2BD2 /* PixelifySans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PixelifySans-SemiBold.ttf"; sourceTree = "<group>"; };
 		6ADB4DAAF423854C3DAFAE57 /* CapyDayStatusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapyDayStatusTests.swift; sourceTree = "<group>"; };
 		6B52CBC2BAE03632A6C24901 /* CapyEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapyEngineTests.swift; sourceTree = "<group>"; };
 		6BD8C2D0020BA3ABA80072FF /* DayHistoryHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayHistoryHelper.swift; sourceTree = "<group>"; };
-		6DE857BCE4CCA3BE49B91499 /* CapyFontResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapyFontResolver.swift; sourceTree = "<group>"; };
-		70A2BCF36C6B8A8FAC56B7AB /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		7B1166C601A8511EC18C40E1 /* FedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FedView.swift; sourceTree = "<group>"; };
+		7B148BE3A7E3C2AD917007D4 /* PixelifySans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PixelifySans-Regular.ttf"; sourceTree = "<group>"; };
+		862777C22630A2FA8E63A8E8 /* PixelifySans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PixelifySans-Medium.ttf"; sourceTree = "<group>"; };
 		892BE7B049451653FC787389 /* CapyModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapyModels.swift; sourceTree = "<group>"; };
-		931F700C7FD2BF8A29CB4A21 /* HeroCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCard.swift; sourceTree = "<group>"; };
 		943AE0820F712867E75D5D02 /* CapyReconciler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapyReconciler.swift; sourceTree = "<group>"; };
 		952119B1453DA90AD22243CE /* AvatarState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarState.swift; sourceTree = "<group>"; };
 		998F014542762C90C7564171 /* CapyMascotPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapyMascotPhase.swift; sourceTree = "<group>"; };
 		9A393858B48E6FDEB11DBE43 /* PhotoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
 		9D04DC96B7DECD52A27CB287 /* WidgetTimelineBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetTimelineBuilder.swift; sourceTree = "<group>"; };
 		A07A7AFEE09A8C2B367BB249 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A09ADEC30F221417C0339E76 /* PxHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PxHomeView.swift; sourceTree = "<group>"; };
 		A302ED7864A0678D5886BC94 /* Capy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4D5D59732242D02FF863A45 /* Capy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Capy.entitlements; sourceTree = "<group>"; };
+		A755411F9959FEC31BBFE8A6 /* PxModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PxModelBuilder.swift; sourceTree = "<group>"; };
 		A7EF909872CFED9201169C58 /* WidgetReloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetReloader.swift; sourceTree = "<group>"; };
 		AA6DF1F594EE6776E793EFE6 /* CapyClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapyClock.swift; sourceTree = "<group>"; };
 		B2FE2B2BD329CA8151F98BDB /* panel_0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = panel_0.jpg; sourceTree = "<group>"; };
-		B5E5C252D974BA2E8714F590 /* CapyTextStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapyTextStyles.swift; sourceTree = "<group>"; };
-		B63F4F805532B0C6638E1C46 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
-		BDCB42A4D0669931F3930440 /* WidgetSceneBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetSceneBackground.swift; sourceTree = "<group>"; };
+		BEE122ECA833CA8F8A0329B4 /* PxWidgetViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PxWidgetViews.swift; sourceTree = "<group>"; };
 		CA82695531E177F016E174A0 /* panel_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = panel_3.jpg; sourceTree = "<group>"; };
-		D020FE9C43C773BF3390E464 /* CapyWidgetViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapyWidgetViews.swift; sourceTree = "<group>"; };
 		D570CA600410EFDEA39B1948 /* CapyWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapyWidget.swift; sourceTree = "<group>"; };
-		D62AB9CDF09CA242EE5B7EDD /* DotGridBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotGridBackground.swift; sourceTree = "<group>"; };
-		D8D2243B75895573A09E545A /* CapyFontLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapyFontLoader.swift; sourceTree = "<group>"; };
 		DBB686AF8582D96E22A7ECCE /* SharedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStore.swift; sourceTree = "<group>"; };
 		DC1A050C01A44861ED01B4DC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		DDF5770FB86AEB11C53B2A72 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		DEAA7840AF340C59A031D043 /* CapyNotificationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapyNotificationDelegate.swift; sourceTree = "<group>"; };
 		DF5A32A9A61E3439C4AFB07F /* CapyEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapyEngine.swift; sourceTree = "<group>"; };
 		E26B414483B06C84F3690459 /* panel_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = panel_2.jpg; sourceTree = "<group>"; };
+		EB618FA7CC5C1E44D6DEBC4C /* PxFedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PxFedView.swift; sourceTree = "<group>"; };
 		F677FD873F77420018F46EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F6B71FB9F29C76455EDBB545 /* PixelifySans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PixelifySans-Bold.ttf"; sourceTree = "<group>"; };
 		F7458236431254F155F2292C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		FEFB823754EDD892304A2D84 /* CapyWidgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CapyWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -218,9 +199,8 @@
 			children = (
 				29026EECC5C1CD43AE42A566 /* CapyWidget.entitlements */,
 				D570CA600410EFDEA39B1948 /* CapyWidget.swift */,
-				D020FE9C43C773BF3390E464 /* CapyWidgetViews.swift */,
 				0B2B9DD4FBE140C79AEBABB6 /* Info.plist */,
-				BDCB42A4D0669931F3930440 /* WidgetSceneBackground.swift */,
+				3AE656F7452F5E4973205AF2 /* WidgetPxModel.swift */,
 			);
 			path = CapyWidget;
 			sourceTree = "<group>";
@@ -231,6 +211,14 @@
 				F7458236431254F155F2292C /* SettingsView.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		47EE39ED30F31FAC794F26CC /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				A755411F9959FEC31BBFE8A6 /* PxModelBuilder.swift */,
+			);
+			path = Bridge;
 			sourceTree = "<group>";
 		};
 		48ABF9FBA12BB89F3F0D4CF2 /* Home */ = {
@@ -272,10 +260,11 @@
 				A4D5D59732242D02FF863A45 /* Capy.entitlements */,
 				F677FD873F77420018F46EAC /* Info.plist */,
 				69DAFC1773D634DC22E66AFD /* App */,
-				D1489A67903C5FA5F581709E /* Design */,
+				47EE39ED30F31FAC794F26CC /* Bridge */,
 				A70EB94155CBBA8FDDA45888 /* Engine */,
 				EF2F9580D98B2233B3CCDD7B /* Features */,
 				1D7039FC81875832EC272A2C /* Models */,
+				DD838E9743E0D352A3181AFC /* PixelKit */,
 				CAA2E640B4AA3E0ADC319A3A /* Resources */,
 				BFB59B23365A86EFC00B8384 /* Services */,
 			);
@@ -310,6 +299,20 @@
 				998F014542762C90C7564171 /* CapyMascotPhase.swift */,
 			);
 			path = Engine;
+			sourceTree = "<group>";
+		};
+		B78EBCE2C6690D4A13866548 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				2C6851E784E25FDCC38683F1 /* PxCameraView.swift */,
+				382C743210BFADDC914D52C7 /* PxComponents.swift */,
+				EB618FA7CC5C1E44D6DEBC4C /* PxFedView.swift */,
+				635873512812452E1554E89C /* PxHistoryView.swift */,
+				A09ADEC30F221417C0339E76 /* PxHomeView.swift */,
+				45310480932EC767119FDD05 /* PxTheme.swift */,
+				BEE122ECA833CA8F8A0329B4 /* PxWidgetViews.swift */,
+			);
+			path = Swift;
 			sourceTree = "<group>";
 		};
 		BA7A46DCA6D0F612D47FDE45 /* Products */ = {
@@ -355,34 +358,23 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
-		D1489A67903C5FA5F581709E /* Design */ = {
-			isa = PBXGroup;
-			children = (
-				B63F4F805532B0C6638E1C46 /* AvatarView.swift */,
-				466A85AFCFADB74F3B2CD8B0 /* CapyComponents.swift */,
-				D8D2243B75895573A09E545A /* CapyFontLoader.swift */,
-				6DE857BCE4CCA3BE49B91499 /* CapyFontResolver.swift */,
-				B5E5C252D974BA2E8714F590 /* CapyTextStyles.swift */,
-				D62AB9CDF09CA242EE5B7EDD /* DotGridBackground.swift */,
-				23DC891B98FD87E466164E1F /* HeroCapyCard.swift */,
-				931F700C7FD2BF8A29CB4A21 /* HeroCard.swift */,
-				59BED309571FFD5AA7916681 /* MascotView.swift */,
-				26ED11A585416B53E1C7EDEB /* PaperBackground.swift */,
-				70A2BCF36C6B8A8FAC56B7AB /* Theme.swift */,
-			);
-			path = Design;
-			sourceTree = "<group>";
-		};
 		D4A4A151DFFB506C29464266 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				396191DF7C55F110B9A0FECB /* Fredoka-Bold.ttf */,
-				2B257D0D25D6DAF14E9C7F36 /* Fredoka-SemiBold.ttf */,
-				4F3F99AD18316DA40C291517 /* Nunito-Bold.ttf */,
-				342AF8E2D571394CF284AE8C /* Nunito-ExtraBold.ttf */,
-				420962B64B921817B2E5656F /* Nunito-SemiBold.ttf */,
+				F6B71FB9F29C76455EDBB545 /* PixelifySans-Bold.ttf */,
+				862777C22630A2FA8E63A8E8 /* PixelifySans-Medium.ttf */,
+				7B148BE3A7E3C2AD917007D4 /* PixelifySans-Regular.ttf */,
+				638AD9347838F7CCCBBF2BD2 /* PixelifySans-SemiBold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DD838E9743E0D352A3181AFC /* PixelKit */ = {
+			isa = PBXGroup;
+			children = (
+				B78EBCE2C6690D4A13866548 /* Swift */,
+			);
+			path = PixelKit;
 			sourceTree = "<group>";
 		};
 		EA3DC341CB0C63A09A13F438 /* Fed */ = {
@@ -535,11 +527,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5EF4D329A42F6D190CA88FE /* Assets.xcassets in Resources */,
-				D79839038816E05123AFAFC5 /* Fredoka-Bold.ttf in Resources */,
-				5B847FE7E34CC29A40CFCF1C /* Fredoka-SemiBold.ttf in Resources */,
-				CBE3C431E6710C7661499E61 /* Nunito-Bold.ttf in Resources */,
-				633663FAAD1695AFD361656D /* Nunito-ExtraBold.ttf in Resources */,
-				55A0A7B2C06885FBF0D397EC /* Nunito-SemiBold.ttf in Resources */,
+				65B298D0F408E55D31A50CC8 /* PixelifySans-Bold.ttf in Resources */,
+				915088C8FC48B573A4B76382 /* PixelifySans-Medium.ttf in Resources */,
+				6F65C565590558A6744B1343 /* PixelifySans-Regular.ttf in Resources */,
+				08396C6C2942B78A7DAA34AC /* PixelifySans-SemiBold.ttf in Resources */,
 				CEB462F9B6093021CB0F7695 /* panel_0.jpg in Resources */,
 				872B670163F554FADF39B4FE /* panel_1.jpg in Resources */,
 				5A58734C7C4E8FE016DF8A8C /* panel_2.jpg in Resources */,
@@ -556,31 +547,22 @@
 			files = (
 				140280F2500108CC1AC78044 /* AppConstants.swift in Sources */,
 				BD7839BA537E532ED0356114 /* AvatarState.swift in Sources */,
-				66063B086627D95D979121DE /* AvatarView.swift in Sources */,
 				47440CF0D32F28D184FB6AB7 /* CapyClock.swift in Sources */,
-				519F539DA2E5FF616A3F06C6 /* CapyComponents.swift in Sources */,
 				2EF6CC60891D634DBDB59EA9 /* CapyEngine.swift in Sources */,
-				E1D04880B6A2AB3C4DF4A34D /* CapyFontLoader.swift in Sources */,
-				4AE6683EBD94610F619CDEE6 /* CapyFontResolver.swift in Sources */,
 				718F6CF21E19C447000C7E6C /* CapyMascotPhase.swift in Sources */,
 				1D38AA799D290C69994E049B /* CapyModels.swift in Sources */,
 				B0F8E296F842FFDB26D17E7C /* CapyNotifications.swift in Sources */,
 				75EC988651A3FE5922445A50 /* CapyReconciler.swift in Sources */,
-				6AB117FDCDC60C65AE7217A6 /* CapyTextStyles.swift in Sources */,
 				4185E8A65C87F6665564250F /* CapyWidget.swift in Sources */,
-				C9C71056226AFDA1A86E0F83 /* CapyWidgetViews.swift in Sources */,
 				D86EFDB396D0229EBD1F36AE /* DayHistoryHelper.swift in Sources */,
-				C8BBBA73C78AF00EAF5532BF /* DotGridBackground.swift in Sources */,
 				1715F64132CFC63BE75E043D /* FeedService.swift in Sources */,
-				0B45EB247467B3AD2C3CBD57 /* HeroCapyCard.swift in Sources */,
-				483340A83444E268D08773E0 /* HeroCard.swift in Sources */,
-				33A3F712DE92E61A2E8CCB5D /* MascotView.swift in Sources */,
-				70BE3EE91D8B329273D80BAA /* PaperBackground.swift in Sources */,
 				674B2E353AFDBACA7E02E9D3 /* PhotoStore.swift in Sources */,
+				D58589F957726ABCF7A19641 /* PxComponents.swift in Sources */,
+				418BD42FD43522EF57A5F7B2 /* PxTheme.swift in Sources */,
+				A9422908565252FCFB04DBFF /* PxWidgetViews.swift in Sources */,
 				E3156A54B9949349716C91A0 /* SharedStore.swift in Sources */,
-				2251DEC6FE9C59A0E56E45A3 /* Theme.swift in Sources */,
+				0AA0128896CD1770553AA71D /* WidgetPxModel.swift in Sources */,
 				F7A0B9D3C37F1C988DDBBEED /* WidgetReloader.swift in Sources */,
-				78976E4A970D0F066B19FFF4 /* WidgetSceneBackground.swift in Sources */,
 				EE601523908208D92BFAF666 /* WidgetSnapshot.swift in Sources */,
 				C2A8F88655F90DF7E0C9B4EB /* WidgetTimelineBuilder.swift in Sources */,
 			);
@@ -592,40 +574,36 @@
 			files = (
 				09976FCEE9107BA1F019B23A /* AppConstants.swift in Sources */,
 				F425CA58DFE60AB3A8A1A7E5 /* AvatarState.swift in Sources */,
-				31C559C73A6678E1BA24FE8D /* AvatarView.swift in Sources */,
 				9D3E4CB8339F5C0B6AD4C713 /* CameraFlowView.swift in Sources */,
 				36FB88439F79E52357CACDCA /* CameraPreviewView.swift in Sources */,
 				769BCDE29B5AF9B290E59358 /* CameraService.swift in Sources */,
 				3FB31D9285A1617A49E9A74B /* CapyApp.swift in Sources */,
 				8C92D018580BCC7AC5107978 /* CapyAppState.swift in Sources */,
 				1B91295DCEBEBA2C32783237 /* CapyClock.swift in Sources */,
-				41F82C158CD749769D34A0EB /* CapyComponents.swift in Sources */,
 				CA44ECF3579BFABCAEA24856 /* CapyEngine.swift in Sources */,
-				26D831EA138B4ABDDA5DDADB /* CapyFontLoader.swift in Sources */,
-				C2ED911C77CB810B82DDEB3C /* CapyFontResolver.swift in Sources */,
 				BDB74CFCF02CB9187577BF73 /* CapyMascotPhase.swift in Sources */,
 				B45D78A8F65513B38706EAA8 /* CapyModels.swift in Sources */,
 				168659BAE832728C24098916 /* CapyNotificationDelegate.swift in Sources */,
 				07BEBE55C8310D758CE1F23B /* CapyNotifications.swift in Sources */,
 				3AF724353E12683A7F65629B /* CapyReconciler.swift in Sources */,
 				71D89E429263D536CA832DD3 /* CapyRootView.swift in Sources */,
-				9F0AC95645C534E6ED76056C /* CapyTextStyles.swift in Sources */,
 				E55DDBEC7A4EA5EB09FFCC1C /* DayHistoryHelper.swift in Sources */,
-				A19DC6CE4013CD2717C31608 /* DotGridBackground.swift in Sources */,
 				50E927F6DF9C7D30B8616739 /* FedView.swift in Sources */,
 				591320C501A45A9A9DE52F62 /* FeedService.swift in Sources */,
-				245B60E2781C2E9AED07FFAD /* HeroCapyCard.swift in Sources */,
-				9D4E9F89A689EFE62A5BC1E6 /* HeroCard.swift in Sources */,
 				CF353D567E6C6186E97540B6 /* HistoryView.swift in Sources */,
 				18951B39ED6614F51A432FE2 /* HomeView.swift in Sources */,
 				8B40DE252E929858FFA37EA4 /* HomeViewModel.swift in Sources */,
-				B7C9FC70CE8DDDFCF44BE364 /* MascotView.swift in Sources */,
 				E76D869438F2AD8A81A7A55B /* OnboardingFlowView.swift in Sources */,
-				25015305833174754602B44C /* PaperBackground.swift in Sources */,
 				A65BB53CB0FB62BB2FD66034 /* PhotoStore.swift in Sources */,
+				0912C827D04F3CEBEA0FA879 /* PxCameraView.swift in Sources */,
+				FCFF263C4BD515AC641442F4 /* PxComponents.swift in Sources */,
+				96E4A40AEB5D437898827C3D /* PxFedView.swift in Sources */,
+				CD518BE5A0B2D62F7E24D693 /* PxHistoryView.swift in Sources */,
+				3A1CE16AD12A6CD49052D711 /* PxHomeView.swift in Sources */,
+				C4CA59807D22EF320BFB8A07 /* PxModelBuilder.swift in Sources */,
+				0A00D983E018025C655C84B6 /* PxTheme.swift in Sources */,
 				95ED82EE20C312AE22FDC6DA /* SettingsView.swift in Sources */,
 				F25B61C2F2999111604D857A /* SharedStore.swift in Sources */,
-				1F43CD32FDB746C7C5781200 /* Theme.swift in Sources */,
 				EA17B6C8959B7872DF073033 /* WidgetReloader.swift in Sources */,
 				C2172DA1F1E44436EA9DE9A0 /* WidgetSnapshot.swift in Sources */,
 				A41A56ED017DBECC60A03D61 /* WidgetTimelineBuilder.swift in Sources */,

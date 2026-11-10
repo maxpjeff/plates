@@ -8,7 +8,7 @@ enum CapyState: String, Codable, CaseIterable {
         switch self {
         case .lockedIn: "Locked in"
         case .chilling: "Recovering"
-        case .couch: "Couch mode"
+        case .couch: "Lazy"
         case .restDay: "Rest day"
         case .asleep: "Chud"
         case .cheering: "Fed!"

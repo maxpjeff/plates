@@ -10,6 +10,13 @@ targets:
     platform: iOS
     sources:
       - path: Capy
+        excludes:
+          - _old/**
+          - PixelKit/CURSOR_PROMPT.md
+          - PixelKit/Fonts/**
+          - PixelKit/Icons/**
+          - PixelKit/Sprites/**
+          - PixelKit/Swift/PxWidgetViews.swift
     resources:
       - path: Capy/Resources
       - path: Capy/Assets.xcassets
@@ -45,6 +52,16 @@ targets:
           - Info.plist
           - Resources/Fonts/**
           - "**/*.entitlements"
+          - _old/**
+          - PixelKit/CURSOR_PROMPT.md
+          - PixelKit/Fonts/**
+          - PixelKit/Icons/**
+          - PixelKit/Sprites/**
+          - PixelKit/Swift/PxHomeView.swift
+          - PixelKit/Swift/PxCameraView.swift
+          - PixelKit/Swift/PxFedView.swift
+          - PixelKit/Swift/PxHistoryView.swift
+          - Bridge/PxModelBuilder.swift
     resources:
       - path: Capy/Resources/Fonts
       - path: Capy/Assets.xcassets

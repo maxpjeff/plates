@@ -28,11 +28,10 @@
 	<dict/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Fredoka-Bold.ttf</string>
-		<string>Fredoka-SemiBold.ttf</string>
-		<string>Nunito-SemiBold.ttf</string>
-		<string>Nunito-Bold.ttf</string>
-		<string>Nunito-ExtraBold.ttf</string>
+		<string>PixelifySans-Regular.ttf</string>
+		<string>PixelifySans-Medium.ttf</string>
+		<string>PixelifySans-SemiBold.ttf</string>
+		<string>PixelifySans-Bold.ttf</string>
 	</array>
 	<key>CFBundleURLTypes</key>
 	<array>

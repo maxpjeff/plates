@@ -18,20 +18,23 @@ struct SettingsView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                PaperBackground()
+                PixelBackground()
                 ScrollView {
                     VStack(alignment: .leading, spacing: 18) {
                         Text("Settings")
-                            .font(CapyFont.fredoka(34))
-                            .foregroundStyle(Theme.Color.ink)
+                            .font(PxFont.screenTitle)
+                            .foregroundStyle(Px.ink)
                             .padding(.top, 8)
 
-                        SettingsSectionCard(title: "Capybara", icon: "pawprint.fill") {
+                        settingsCard(title: "Capybara") {
                             Text("Name")
-                                .font(CapyFont.nunito(13, .heavy))
-                                .foregroundStyle(Theme.Color.textSecondary)
+                                .font(PxFont.caption)
+                                .foregroundStyle(Px.textSecondary)
                             TextField("Biscuit", text: $name)
-                                .capyTextFieldChrome()
+                                .font(PxFont.body)
+                                .foregroundStyle(Px.ink)
+                                .padding(14)
+                                .pixelBox(fill: Px.card, size: .small)
                                 .onChange(of: name) { _, v in
                                     if v.count > 16 { name = String(v.prefix(16)) }
                                     capys.first?.name = name.trimmingCharacters(in: .whitespaces)
@@ -40,20 +43,20 @@ struct SettingsView: View {
                                 }
                         }
 
-                        SettingsSectionCard(title: "Rest days", icon: "leaf.fill") {
+                        settingsCard(title: "Rest days") {
                             weekdayRow
                             if shakeRest {
                                 Text("Max 3 rest days")
-                                    .font(CapyFont.nunito(13, .heavy))
-                                    .foregroundStyle(Theme.Color.flame)
+                                    .font(PxFont.caption)
+                                    .foregroundStyle(Px.flame)
                             }
                             Text("Changes start tomorrow.")
-                                .font(CapyFont.nunito(13, .heavy))
-                                .foregroundStyle(Theme.Color.textSecondary)
+                                .font(PxFont.caption)
+                                .foregroundStyle(Px.textSecondary)
                         }
 
                         if let settings = settingsList.first {
-                            SettingsSectionCard(title: "Reminders", icon: "bell.fill") {
+                            settingsCard(title: "Reminders") {
                                 Toggle(isOn: Binding(
                                     get: { settings.notificationsEnabled },
                                     set: { new in
@@ -75,57 +78,35 @@ struct SettingsView: View {
                                     }
                                 )) {
                                     VStack(alignment: .leading, spacing: 4) {
-                                        Text("Heads-up before couch mode")
-                                            .font(CapyFont.nunito(16, .heavy))
-                                            .foregroundStyle(Theme.Color.ink)
-                                        Text("One nudge when energy hits 24 hours.")
-                                            .font(CapyFont.nunito(13, .heavy))
-                                            .foregroundStyle(Theme.Color.textSecondary)
+                                        Text("Heads-up before lazy mode")
+                                            .font(PxFont.label)
+                                            .foregroundStyle(Px.ink)
+                                        Text("A nudge before 12 PM on workout days if you haven't fed.")
+                                            .font(PxFont.caption)
+                                            .foregroundStyle(Px.textSecondary)
                                     }
                                 }
-                                .tint(Theme.Color.orange)
+                                .tint(Px.orange)
                             }
                         }
 
-                        Button(role: .destructive) { showResetConfirm = true } label: {
-                            HStack {
-                                Image(systemName: "arrow.counterclockwise")
-                                    .font(.system(size: 18, weight: .semibold))
-                                Text("Start over")
-                                    .font(CapyFont.fredoka(20))
-                                Spacer()
-                            }
-                            .foregroundStyle(Color(capyHex: "7A1F2B"))
-                            .padding(16)
+                        Button("Start over") { showResetConfirm = true }
+                            .font(PxFont.make(20, .bold))
+                            .foregroundStyle(Px.pinkText)
                             .frame(maxWidth: .infinity)
-                            .background(
-                                RoundedRectangle(cornerRadius: 20, style: .continuous)
-                                    .fill(Color(capyHex: "F8D5D9"))
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 20, style: .continuous)
-                                            .strokeBorder(Theme.Color.ink, lineWidth: 2.5)
-                                    )
-                                    .background(
-                                        RoundedRectangle(cornerRadius: 20, style: .continuous)
-                                            .fill(Theme.Color.ink)
-                                            .offset(y: 4)
-                                    )
-                            )
-                        }
-                        .buttonStyle(.plain)
-                        .padding(.top, 4)
+                            .padding(16)
+                            .buttonStyle(PixelButtonStyle(fill: Px.pinkSoft, size: .small))
                     }
                     .padding(.horizontal, 20)
                     .padding(.bottom, 32)
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
-            .toolbarColorScheme(.light, for: .navigationBar)
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Done") { dismiss() }
-                        .font(CapyFont.fredoka(18))
-                        .foregroundStyle(Theme.Color.ink)
+                        .font(PxFont.make(18, .bold))
+                        .foregroundStyle(Px.ink)
                 }
             }
             .onAppear { load() }
@@ -136,25 +117,30 @@ struct SettingsView: View {
                 Text("This deletes all feeds and returns to onboarding.")
             }
         }
+        .preferredColorScheme(.light)
+    }
+
+    private func settingsCard(title: String, @ViewBuilder content: () -> some View) -> some View {
+        VStack(alignment: .leading, spacing: 14) {
+            Text(title)
+                .font(PxFont.section)
+                .foregroundStyle(Px.ink)
+            content()
+        }
+        .padding(14)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .pixelBox(fill: Px.card, size: .large)
     }
 
     private var weekdayRow: some View {
         HStack(spacing: 8) {
             ForEach(1...7, id: \.self) { wd in
                 let selected = restDays.contains(wd)
-                Button {
-                    toggleRest(wd)
-                } label: {
-                    Text(weekdaySymbols[wd - 1])
-                        .font(CapyFont.nunito(14, .heavy))
-                        .foregroundStyle(Theme.Color.ink)
-                        .frame(width: 40, height: 40)
-                        .background(Circle().fill(selected ? Theme.Color.orangeSoft : Theme.Color.card))
-                        .overlay(
-                            Circle().strokeBorder(Theme.Color.ink, lineWidth: 2)
-                        )
-                }
-                .buttonStyle(.plain)
+                Button(weekdaySymbols[wd - 1]) { toggleRest(wd) }
+                    .font(PxFont.make(18, .bold))
+                    .foregroundStyle(Px.ink)
+                    .frame(width: 40, height: 40)
+                    .buttonStyle(PixelButtonStyle(fill: selected ? Px.orange : Px.card, size: .small))
             }
         }
         .frame(maxWidth: .infinity)
@@ -209,38 +195,6 @@ struct SettingsView: View {
         #endif
         WidgetReloader.clearAndReload()
         dismiss()
-    }
-}
-
-private struct SettingsSectionCard<Content: View>: View {
-    let title: String
-    let icon: String
-    @ViewBuilder var content: () -> Content
-
-    var body: some View {
-        let shape = RoundedRectangle(cornerRadius: 22, style: .continuous)
-        VStack(alignment: .leading, spacing: 14) {
-            HStack(spacing: 10) {
-                ZStack {
-                    Circle()
-                        .fill(Theme.Color.yellowSoft)
-                        .frame(width: 36, height: 36)
-                        .overlay(Circle().strokeBorder(Theme.Color.ink, lineWidth: 2))
-                    Image(systemName: icon)
-                        .font(.system(size: 16, weight: .semibold))
-                        .foregroundStyle(Theme.Color.ink)
-                }
-                Text(title)
-                    .font(CapyFont.fredoka(22))
-                    .foregroundStyle(Theme.Color.ink)
-            }
-            content()
-        }
-        .padding(16)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background(shape.fill(Theme.Color.card))
-        .overlay(shape.strokeBorder(Theme.Color.ink, lineWidth: 2.5))
-        .background(shape.fill(Theme.Color.ink).offset(y: 5))
     }
 }
 

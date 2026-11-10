@@ -8,26 +8,22 @@ struct OnboardingFlowView: View {
     @State private var restDays: Set<Int> = [1]
     @State private var shakeRest = false
 
+    private let weekdaySymbols = ["S", "M", "T", "W", "T", "F", "S"]
+
     var body: some View {
         ZStack {
-            PaperBackground()
-                .capyPaperText()
+            PixelBackground()
             VStack(spacing: 0) {
                 HStack {
                     if step > 0 {
-                        Button {
+                        PixelIconButton(icon: "pixel_back", accessibilityText: "Back") {
                             withAnimation(.spring()) { step -= 1 }
-                        } label: {
-                            Image(systemName: "chevron.left")
-                                .font(.system(size: 18, weight: .semibold))
-                                .foregroundStyle(Theme.Color.ink)
-                                .frame(width: 44, height: 44)
                         }
                     }
                     Spacer()
-                    OnboardingDots(step: step, total: 5)
+                    progressDots
                     Spacer()
-                    Color.clear.frame(width: 44, height: 44)
+                    Color.clear.frame(width: 38, height: 38)
                 }
                 .padding(.horizontal, 20)
                 .padding(.top, 8)
@@ -43,24 +39,36 @@ struct OnboardingFlowView: View {
                 .animation(.spring(), value: step)
             }
         }
+        .preferredColorScheme(.light)
+    }
+
+    private var progressDots: some View {
+        HStack(spacing: 6) {
+            ForEach(0..<5, id: \.self) { i in
+                Rectangle()
+                    .fill(i <= step ? Px.orange : Px.segmentEmpty)
+                    .frame(width: 10, height: 10)
+                    .overlay {
+                        if i <= step {
+                            Rectangle().stroke(Px.ink, lineWidth: 2)
+                        }
+                    }
+            }
+        }
     }
 
     private var meetStep: some View {
-        onboardingPage(
-            button: "Let's go",
-            action: { step = 1 }
-        ) {
-            MascotView(state: .lockedIn, size: 160)
+        onboardingPage(button: "Let's go", action: { step = 1 }) {
+            CapySprite(status: .lockedIn, maxHeight: 220)
             Text("Meet your capybara.")
-                .font(CapyFont.fredoka(30))
-                .foregroundStyle(Theme.Color.ink)
+                .font(PxFont.screenTitle)
+                .foregroundStyle(Px.ink)
                 .multilineTextAlignment(.center)
             VStack(alignment: .leading, spacing: 16) {
-                onboardingRow(icon: "camera.fill", text: "Snap a photo when you're active")
-                onboardingRow(icon: "bolt.fill", text: "That feeds your capybara for 48 hours")
-                onboardingRow(icon: "sofa.fill", text: "Skip too long and it ends up on the couch")
+                onboardingRow(icon: "pixel_camera", text: "Snap a photo when you work out")
+                onboardingRow(icon: "pixel_flame", text: "One feed marks today complete—show up daily")
+                onboardingRow(icon: "pixel_photos", text: "Skip too long and it gets lazy")
             }
-            .padding(.horizontal, 8)
         }
     }
 
@@ -71,20 +79,24 @@ struct OnboardingFlowView: View {
             action: { step = 2 }
         ) {
             Text("What's their name?")
-                .font(CapyFont.fredoka(30))
+                .font(PxFont.screenTitle)
+                .foregroundStyle(Px.ink)
             TextField("Biscuit", text: $name)
-                .capyTextFieldChrome()
+                .font(PxFont.make(24, .bold))
+                .foregroundStyle(Px.ink)
+                .padding(14)
+                .pixelBox(fill: Px.card, size: .small)
                 .onChange(of: name) { _, new in
                     if new.count > 16 { name = String(new.prefix(16)) }
                 }
             HStack(spacing: 10) {
                 ForEach(["Biscuit", "Mochi", "Waffles"], id: \.self) { chip in
                     Button(chip) { name = chip }
-                        .font(CapyFont.nunito(14, .heavy))
+                        .font(PxFont.make(18, .bold))
+                        .foregroundStyle(Px.ink)
                         .padding(.horizontal, 14)
                         .padding(.vertical, 10)
-                        .background(Capsule().fill(Theme.Color.yellowSoft))
-                        .overlay(Capsule().strokeBorder(Theme.Color.ink, lineWidth: 2))
+                        .buttonStyle(PixelButtonStyle(fill: Px.yellow, size: .small))
                 }
             }
         }
@@ -93,40 +105,34 @@ struct OnboardingFlowView: View {
     private var restStep: some View {
         onboardingPage(button: "Continue", action: { step = 3 }) {
             Text("When are your rest days?")
-                .font(CapyFont.fredoka(30))
-            Text("\(name) won't lose energy on these days. Pick up to 3.")
-                .font(CapyFont.nunito(16))
-                .foregroundStyle(Theme.Color.textSecondary)
+                .font(PxFont.screenTitle)
+                .foregroundStyle(Px.ink)
+            Text("\(name) won't need a feed on these days. Pick up to 3.")
+                .font(PxFont.body)
+                .foregroundStyle(Px.textSecondary)
                 .multilineTextAlignment(.center)
             weekdayRow
             if shakeRest {
                 Text("Max 3 rest days")
-                    .font(CapyFont.nunito(13, .heavy))
-                    .foregroundStyle(Theme.Color.flame)
+                    .font(PxFont.caption)
+                    .foregroundStyle(Px.flame)
             }
-            Button("No rest days") {
-                restDays.removeAll()
-            }
-            .font(CapyFont.nunito(14, .heavy))
-            .foregroundStyle(Theme.Color.textSecondary)
+            Button("No rest days") { restDays.removeAll() }
+                .font(PxFont.make(17, .semibold))
+                .foregroundStyle(Px.textSecondary)
+                .underline()
         }
     }
 
     private var weekdayRow: some View {
-        let symbols = ["S", "M", "T", "W", "T", "F", "S"]
-        return HStack(spacing: 8) {
+        HStack(spacing: 8) {
             ForEach(1...7, id: \.self) { wd in
                 let selected = restDays.contains(wd)
-                Button {
-                    toggleRest(wd)
-                } label: {
-                    Text(symbols[wd - 1])
-                        .font(CapyFont.nunito(14, .heavy))
-                        .frame(width: 40, height: 40)
-                        .background(Circle().fill(selected ? Theme.Color.orangeSoft : Theme.Color.card))
-                        .overlay(Circle().strokeBorder(Theme.Color.ink, lineWidth: 2))
-                }
-                .buttonStyle(.plain)
+                Button(weekdaySymbols[wd - 1]) { toggleRest(wd) }
+                    .font(PxFont.make(18, .bold))
+                    .foregroundStyle(Px.ink)
+                    .frame(width: 40, height: 40)
+                    .buttonStyle(PixelButtonStyle(fill: selected ? Px.orange : Px.card, size: .small))
             }
         }
         .modifier(ShakeEffect(animating: shakeRest))
@@ -143,13 +149,14 @@ struct OnboardingFlowView: View {
             },
             secondary: ("Not now", { step = 4 })
         ) {
-            MascotView(state: .couch, size: 120)
+            CapySprite(status: .couchMode, maxHeight: 160)
             Text("We'll warn you before \(name) gets lazy.")
-                .font(CapyFont.fredoka(26))
+                .font(PxFont.make(26, .bold))
+                .foregroundStyle(Px.ink)
                 .multilineTextAlignment(.center)
-            Text("One heads-up when there's 24 hours of energy left. No spam.")
-                .font(CapyFont.nunito(16))
-                .foregroundStyle(Theme.Color.textSecondary)
+            Text("A nudge before 12 PM on workout days if you haven't fed yet. No spam.")
+                .font(PxFont.body)
+                .foregroundStyle(Px.textSecondary)
                 .multilineTextAlignment(.center)
         }
     }
@@ -158,15 +165,15 @@ struct OnboardingFlowView: View {
         onboardingPage(button: "Done", action: finishOnboarding) {
             LockScreenWidgetIllustration()
             VStack(alignment: .leading, spacing: 12) {
-                Text("1. Press and hold your lock screen").font(CapyFont.nunito(16))
-                Text("2. Tap Customize, then the widget area").font(CapyFont.nunito(16))
-                Text("3. Add \(AppConstants.appName)").font(CapyFont.nunito(16))
+                Text("1. Press and hold your lock screen").font(PxFont.body)
+                Text("2. Tap Customize, then the widget area").font(PxFont.body)
+                Text("3. Add \(AppConstants.appName)").font(PxFont.body)
             }
-            .foregroundStyle(Theme.Color.ink)
+            .foregroundStyle(Px.ink)
         }
     }
 
-  @ViewBuilder
+    @ViewBuilder
     private func onboardingPage(
         button: String,
         disabled: Bool = false,
@@ -179,13 +186,14 @@ struct OnboardingFlowView: View {
             content()
             Spacer(minLength: 0)
             VStack(spacing: 12) {
-                CapyPrimaryButton(title: button, action: action)
+                PixelPrimaryButton(title: button, icon: nil, action: action)
                     .opacity(disabled ? 0.4 : 1)
                     .disabled(disabled)
                 if let secondary {
                     Button(secondary.0, action: secondary.1)
-                        .font(CapyFont.nunito(14, .heavy))
-                        .foregroundStyle(Theme.Color.textSecondary)
+                        .font(PxFont.make(17, .semibold))
+                        .foregroundStyle(Px.textSecondary)
+                        .underline()
                 }
             }
             .padding(.horizontal, 24)
@@ -196,10 +204,9 @@ struct OnboardingFlowView: View {
 
     private func onboardingRow(icon: String, text: String) -> some View {
         HStack(spacing: 12) {
-            CapySymbol(systemName: icon, size: 20)
-            Text(text).font(CapyFont.nunito(16))
+            PixelIcon(icon, size: 24)
+            Text(text).font(PxFont.body).foregroundStyle(Px.ink)
         }
-        .foregroundStyle(Theme.Color.ink)
     }
 
     private func toggleRest(_ wd: Int) {
@@ -230,19 +237,16 @@ struct OnboardingFlowView: View {
 
 private struct LockScreenWidgetIllustration: View {
     var body: some View {
-        RoundedRectangle(cornerRadius: 24)
-            .fill(Theme.Color.ink.opacity(0.85))
+        Rectangle()
+            .fill(Px.ink.opacity(0.85))
             .frame(height: 140)
             .overlay(alignment: .bottomTrailing) {
-                Circle()
-                    .strokeBorder(Theme.Color.orange, lineWidth: 3)
+                Rectangle()
+                    .strokeBorder(Px.orange, lineWidth: 3)
                     .frame(width: 44, height: 44)
                     .padding(16)
             }
-            .overlay(
-                RoundedRectangle(cornerRadius: 24)
-                    .strokeBorder(Theme.Color.ink, lineWidth: 2)
-            )
+            .overlay(Rectangle().strokeBorder(Px.ink, lineWidth: 2))
             .accessibilityHidden(true)
     }
 }

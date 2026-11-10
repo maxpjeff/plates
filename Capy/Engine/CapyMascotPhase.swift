@@ -20,7 +20,7 @@ enum CapyMascotPhase: String, CaseIterable {
         switch self {
         case .lockedIn: "Locked in"
         case .recovering: "Recovering"
-        case .couch: "Couch mode"
+        case .couch: "Lazy"
         case .streakLost: "Streak lost"
         }
     }

@@ -66,4 +66,24 @@ final class HomeViewModel {
     func refreshTick() {
         tick = CapyClock.now()
     }
+
+    func homeTodayMetrics(avatar: AvatarState, snap: CapySnapshot) -> (fraction: Double, text: String) {
+        #if DEBUG
+        if debugAvatarOverride != nil {
+            return debugSampleTodayMetrics(for: avatar)
+        }
+        #endif
+        return (Double(snap.todayBarFraction), snap.todayBarLabel)
+    }
+
+    #if DEBUG
+  private func debugSampleTodayMetrics(for avatar: AvatarState) -> (Double, String) {
+        switch avatar {
+        case .lockedIn: return (1, "Done for today")
+        case .recovering: return (1, "Rest day")
+        case .couchMode: return (0.35, "8 hrs left today")
+        case .streakLost: return (0, "Streak lost")
+        }
+    }
+    #endif
 }
